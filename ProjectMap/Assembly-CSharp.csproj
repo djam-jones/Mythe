@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Background\Scrolling.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyAerial.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyBase.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyBasic.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyDive.cs" />
      <Compile Include="Assets\Scripts\Game\WaveSystem.cs" />
      <Compile Include="Assets\Scripts\Player\Rotation.cs" />
      <Compile Include="Assets\Unity Debugger\DebugInterests.cs" />
