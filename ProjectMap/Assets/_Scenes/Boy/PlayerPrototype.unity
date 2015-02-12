@@ -269,7 +269,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 88, y: 15}
+  m_SizeDelta: {x: 100, y: 17}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &636327064
 MonoBehaviour:
@@ -283,6 +283,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: .100000001
+  jXaxis: 0
+  jYaxis: 0
 --- !u!114 &636327067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,7 +444,7 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1168538560}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &1168538563
 Behaviour:
   m_ObjectHideFlags: 0
