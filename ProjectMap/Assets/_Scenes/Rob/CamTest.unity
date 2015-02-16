@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _target1: {fileID: 1836374033}
   _target2: {fileID: 924316622}
+  _becomeChild: 0
   _transitionTime: 2
   button: {fileID: 1095915380}
 --- !u!1 &1163393344

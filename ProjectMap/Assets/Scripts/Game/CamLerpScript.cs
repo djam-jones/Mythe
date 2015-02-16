@@ -1,16 +1,18 @@
-﻿using UnityEngine;
+﻿//written by Rob Verhoef
+using UnityEngine;
 using System.Collections;
 
 public class CamLerpScript : MonoBehaviour {
 
 	private Transform _startingPos;
-
 	private Transform _targetPos;
 	[SerializeField]
 	private Transform _target1;
 	[SerializeField]
 	private Transform _target2;
 	private bool _switched;
+	[SerializeField]
+	private bool _becomeChild;
 	[SerializeField]
 	private float _transitionTime;
 	private float _t;
@@ -24,18 +26,26 @@ public class CamLerpScript : MonoBehaviour {
 	IEnumerator ChangeTarget () 
 	{
 		Vector3 _startingPos = transform.position;
+		//makes sure the camera switches between targets correctly, also add the camera as a child  cof the target
 		if(_switched == true)
 		{
 			_targetPos = _target1;
-			this.transform.parent = _target1.transform;
+			if(_becomeChild == true)
+			{
+				this.transform.parent = _target1.transform;
+			}
 			_switched = false;
 		}
 		else if(_switched == false)
 		{
 			_targetPos = _target2;
-			this.transform.parent = _target2.transform;
+			if(_becomeChild == true)
+			{
+				this.transform.parent = _target2.transform;
+			}
 			_switched = true;
 		}
+		//the camera moves to the target within the time given in _transitionTime
 		while (_t < _transitionTime)
 		{
 			button.SetActive(false);
@@ -46,5 +56,15 @@ public class CamLerpScript : MonoBehaviour {
 		}
 		_t = 0;
 		button.SetActive(true);
+	}
+
+	void Update ()
+	{
+		//if the camera doesnt becoma child, it follows the active target instead
+		if(_becomeChild == false)
+		{
+			this.transform.position = _targetPos.position;
+			this.transform.Translate(0,0,-10);
+		}
 	}
 }
