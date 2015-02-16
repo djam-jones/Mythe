@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Archive\Scripts\Background\Scrolling.cs" />
+     <Compile Include="Assets\Archive\Scripts\Game\CamLerp.cs" />
      <Compile Include="Assets\Archive\Scripts\Player\Rotation.cs" />
      <Compile Include="Assets\Scripts\Enemies\Guards\GuardAI.cs" />
      <Compile Include="Assets\Scripts\Enemies\Old Enemies\EnemyAerial.cs" />
@@ -56,14 +57,13 @@
      <Compile Include="Assets\Scripts\Enemies\Traps\AcidTrap.cs" />
      <Compile Include="Assets\Scripts\Enemies\Traps\LaserTrap.cs" />
      <Compile Include="Assets\Scripts\Enemies\Traps\Turret.cs" />
-     <Compile Include="Assets\Scripts\Game\CamLerpScript.cs" />
      <Compile Include="Assets\Scripts\Game\CameraFocus.cs" />
      <Compile Include="Assets\Scripts\Game\ChangeLevelFade.cs" />
      <Compile Include="Assets\Scripts\Game\DataUI.cs" />
      <Compile Include="Assets\Scripts\Game\SaveLoadData.cs" />
      <Compile Include="Assets\Scripts\Game\ToBeSavedData.cs" />
      <Compile Include="Assets\Scripts\Game\WaveSystem.cs" />
-     <Compile Include="Assets\Scripts\Player\ItemManipulationScript.cs" />
+     <Compile Include="Assets\Scripts\Player\ItemManipulation.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\UI\Joystick.cs" />

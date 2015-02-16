@@ -2,7 +2,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class CamLerpScript : MonoBehaviour {
+public class CamLerp : MonoBehaviour 
+{
 
 	private Transform _startingPos;
 	private Transform _targetPos;
@@ -15,6 +16,7 @@ public class CamLerpScript : MonoBehaviour {
 	private bool _becomeChild;
 	[SerializeField]
 	private float _transitionTime;
+	[SerializeField]
 	private float _t;
 	[SerializeField]
 	private GameObject button;
