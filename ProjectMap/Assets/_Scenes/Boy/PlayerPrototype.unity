@@ -653,13 +653,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1168538560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23f21ca62d494c841b8761fd75c6c3f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 38dc423fe7b59a9499c6bad397967b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _target1: {fileID: 1445297022}
-  _target2: {fileID: 2123201205}
-  _transitionTime: 2
-  button: {fileID: 226572142}
 --- !u!1001 &1442237020
 Prefab:
   m_ObjectHideFlags: 0

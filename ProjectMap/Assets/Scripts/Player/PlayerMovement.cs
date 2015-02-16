@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     void Start() 
     {
         _body = GetComponent<Rigidbody2D>();
+        CameraFocus.SetFocusOn(this.gameObject);
     }
 
     void Update() 
