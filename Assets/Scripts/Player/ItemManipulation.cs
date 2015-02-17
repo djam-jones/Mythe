@@ -17,6 +17,7 @@ public class ItemManipulation : MonoBehaviour
 		if(Input.GetMouseButtonUp(0))
 		{
 			_manipulationPoints.dragging = false;
+			Invoke("EnableManipulation", 5f);
 		}
 	}
 
@@ -26,6 +27,12 @@ public class ItemManipulation : MonoBehaviour
 		{
 			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(_objectX, _objectY, 10f));
 			_manipulationPoints.dragging = true;
+			_manipulationPoints.recharging = false;
 		}
+	}
+
+	private void EnableManipulation()
+	{
+		_manipulationPoints.recharging = true;
 	}
 }
