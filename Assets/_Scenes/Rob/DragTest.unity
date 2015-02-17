@@ -104,8 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3eb2a2bed394ac4ca9b7b3592f5cf5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _telePoints: 100
-  _decreaseTime: 10
+  _telePoints: 0
+  _decreaseTime: 0
 --- !u!23 &314089478
 Renderer:
   m_ObjectHideFlags: 0
