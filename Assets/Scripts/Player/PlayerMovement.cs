@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+    // Boy Voesten
 
 public class PlayerMovement : MonoBehaviour 
 {
 
-    private float MovementSpeed = 3f;
     public Joystick joystick;
+    private float _movementSpeed = 3f;
     private Rigidbody2D _body;
     private bool _isJumping;
     private float _jumpSpeed = 2f;
@@ -15,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Start() 
     {
         _body = GetComponent<Rigidbody2D>();
-        CameraFocus.SetFocusOn(this.gameObject);
+        CameraFocus.SetFocusOn(gameObject);
     }
 
     void Update() 
@@ -30,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         x = joystick.GetOffsetX();
         velocity = _body.velocity;
-        velocity.x = x * MovementSpeed;
+        velocity.x = x * _movementSpeed;
         _body.velocity = velocity;
     }
 

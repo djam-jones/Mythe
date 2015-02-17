@@ -2,8 +2,6 @@
 using System.Collections;
 using UnityEngine.UI;
 
-    // Rob Verhoef
-
 public class DataUI : MonoBehaviour {
 
 	public Text goldText;

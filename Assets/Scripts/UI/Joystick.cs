@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+    // Boy Voesten
+
 public class Joystick : MonoBehaviour 
 {
 
@@ -11,7 +13,6 @@ public class Joystick : MonoBehaviour
     private bool move;
     private float offsetX;
     public float moveSpeed = 0.1f; 
-    
 
     void Start() 
     {
@@ -67,10 +68,7 @@ public class Joystick : MonoBehaviour
             offsetX = 0;
         }
 
-        //Debug.Log("Pivot: " + pivotToObj);
         Debug.Log("OffsetX: " + offsetX);
-
-        
 
     }
     

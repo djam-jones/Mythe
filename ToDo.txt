@@ -1,0 +1,11 @@
+wat moet er nog gedaan worden?
+	- Alien klimmen
+	- Object manipulation collision on enemy (kill)
+	- Saving completed levels
+	- Main menu
+	- Player movement switching
+	- Level selection
+	- Moving platforms
+	- Pause button
+	- Screenshot when score is visible (save screenshot in host, save url in database)
+	- Highscores with username and ID in database
