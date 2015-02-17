@@ -4,27 +4,28 @@ using System.Collections;
 
 public class ItemManipulation : MonoBehaviour 
 {
-
 	private float _objectX;
 	private float _objectY;
 	[SerializeField]
-	private float _telePoints;
-	[SerializeField]
-	private float _decreaseTime;
-	private bool _dragging;
+	private ManipulationPoints _manipulationPoints;
 
 	void Update () 
 	{
 		_objectX = Input.mousePosition.x;
 		_objectY = Input.mousePosition.y;
+
+		if(Input.GetMouseButtonUp(0))
+		{
+			_manipulationPoints.dragging = false;
+		}
 	}
 
 	void OnMouseDrag()
 	{
-		if(_telePoints > 0)
+		if(_manipulationPoints.points > 0)
 		{
 			transform.position = Camera.main.ScreenToWorldPoint(new Vector3(_objectX, _objectY, 10f));
-			_telePoints -= Time.deltaTime * _decreaseTime;
+			_manipulationPoints.dragging = true;
 		}
 	}
 }
