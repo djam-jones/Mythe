@@ -12,7 +12,11 @@ public class LaserTrap : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == "Player")
+		if(other.transform.tag == "Human")
+		{
+			laserBeam.SetActive(true);
+		}
+		else if(other.transform.tag == "Alien")
 		{
 			laserBeam.SetActive(true);
 		}

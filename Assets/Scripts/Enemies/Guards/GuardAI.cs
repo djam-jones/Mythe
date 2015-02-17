@@ -25,7 +25,7 @@ public class GuardAI : MonoBehaviour {
 
 	void Awake()
 	{
-		_target = GameObject.FindWithTag("Player");
+		_target = GameObject.FindWithTag("Human");
 	}
 
 	void Start()
@@ -39,21 +39,27 @@ public class GuardAI : MonoBehaviour {
 		Raycasting();
 		Behaviours();
 		SetState();
-
-//		if(!facingRight)
-//		{
-//			transform.eulerAngles = new Vector2(0, 0);
-//		}
-//		else if(facingRight)
-//		{
-//			transform.eulerAngles = new Vector2(0, 180);
-//		}
 	}
 
 	void Raycasting()
 	{
-		Debug.DrawLine(transform.position, endOfSight.position, Color.green);
-		_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
+		Debug.Log(hit);
+		if(Physics2D.Raycast(transform.position, endOfSight.position - transform.position))
+		{
+			if (hit.transform.tag == "Human")
+			{
+				_hasSpotted = true;
+				Debug.Log("Intruder Alert!");
+			}
+			else
+			{
+				_hasSpotted = false;
+			}
+		}
+
+		Debug.DrawRay(transform.position, endOfSight.position - transform.position, Color.green);
+		//_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
 	}
 
 	void SetState()
@@ -64,9 +70,6 @@ public class GuardAI : MonoBehaviour {
 		}
 		else if(states == GuardStates.attacking)
 		{
-			//Stops the Coroutine if the Enemy spots the Player.
-			StopCoroutine(PatrolState());
-
 			//Attack the Player
 			Attack();
 		}
@@ -103,6 +106,8 @@ public class GuardAI : MonoBehaviour {
 	{
 		if(_hasSpotted == true)
 		{
+			Debug.Log("Spotted");
+
 			audio.clip = guardSounds[0];
 			audio.Play();
 			alertedSprite.SetActive(true);
@@ -119,6 +124,9 @@ public class GuardAI : MonoBehaviour {
 
 	void Attack()
 	{
+		//Stops the Coroutine if the Enemy spots the Player.
+		StopCoroutine(PatrolState());
+		
 		float step = _speed * Time.deltaTime;
 		transform.position = Vector2.MoveTowards(transform.position, _target.transform.position, step);
 
