@@ -17,8 +17,8 @@ Developers:
 -Djamali Jones     
   
 Artists:  
--Peter Plas    
--Niels de Ruijter    
+-Niels de Ruijter   
+-Roy  
 -Bram Nijland    
 -Kwon Yuri   
 -Miranda Schrama   
