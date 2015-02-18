@@ -8,8 +8,8 @@ public enum GuardStates
 	searching
 }
 
-public class GuardAI : MonoBehaviour {
-
+public class GuardAI : MonoBehaviour 
+{
 	public GuardStates states;
 
 	private GameObject _target;
@@ -43,23 +43,23 @@ public class GuardAI : MonoBehaviour {
 
 	void Raycasting()
 	{
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
-		Debug.Log(hit);
-		if(Physics2D.Raycast(transform.position, endOfSight.position - transform.position))
-		{
-			if (hit.transform.tag == "Human")
-			{
-				_hasSpotted = true;
-				Debug.Log("Intruder Alert!");
-			}
-			else
-			{
-				_hasSpotted = false;
-			}
-		}
+//		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
+//		if(hit)
+//		{
+//			if (hit.transform.tag == "Human")
+//			{
+//				_hasSpotted = true;
+//				print("Target Seen! " + _hasSpotted);
+//			}
+//			else if(hit.transform.tag != "Human")
+//			{
+//				_hasSpotted = false;
+//				print("Target Seen! " + _hasSpotted);
+//			}
+//		}
 
-		Debug.DrawRay(transform.position, endOfSight.position - transform.position, Color.green);
-		//_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
+		Debug.DrawLine(transform.position, endOfSight.position, Color.green);
+		_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
 	}
 
 	void SetState()
