@@ -3,15 +3,11 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - Ground
-  - Joystick
-  - GameManager
-  - 
-  - Trap
-  - Human
-  - Alien
   - 
   - Object
+  - Joystick
+  - Trapdoor
+  - Trap
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
@@ -21,9 +17,9 @@ TagManager:
   Builtin Layer 5: UI
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: Player
-  User Layer 9: Object
-  User Layer 10: Enemy
+  User Layer 8: 
+  User Layer 9: 
+  User Layer 10: 
   User Layer 11: 
   User Layer 12: 
   User Layer 13: 
