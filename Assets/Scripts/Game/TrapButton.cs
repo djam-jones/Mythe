@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Djamali
+
 public class TrapButton : MonoBehaviour 
 {
 	private GameObject _trapDoor;

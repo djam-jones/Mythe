@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Djamali
+
 public class Trapdoor : MonoBehaviour 
 {
 	private Animator _doorAnimator;

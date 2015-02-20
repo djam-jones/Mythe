@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Djamali
+
 public enum GuardStates
 {
 	patrolling,
@@ -13,6 +15,7 @@ public class GuardAI : MonoBehaviour
 	public GuardStates states;
 
 	private GameObject _target;
+	private string _humanTag = "Human";
 	private bool _hasSpotted;
 	private float _speed = 2.5f;
 	private bool facingRight = false;
@@ -21,27 +24,25 @@ public class GuardAI : MonoBehaviour
 	public Transform endOfSight;
 	public GameObject alertedSprite;
 	public AudioClip[] guardSounds;
-	private float _scale;
 
 	void Awake()
 	{
-		_target = GameObject.FindWithTag("Human");
+		_target = GameObject.FindWithTag(_humanTag);
 	}
 
 	void Start()
 	{
 		StartCoroutine(PatrolState());
-		_scale = transform.localScale.x;
 	}
 
 	void Update()
 	{
-		Raycasting();
+		SearchForPlayer();
 		Behaviours();
 		SetState();
 	}
 
-	void Raycasting()
+	void SearchForPlayer()
 	{
 //		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
 //		if(hit)
@@ -70,6 +71,9 @@ public class GuardAI : MonoBehaviour
 		}
 		else if(states == GuardStates.attacking)
 		{
+			//Stops the Coroutine if the Enemy spots the Player.
+			StopCoroutine(PatrolState());
+
 			//Attack the Player
 			Attack();
 		}
@@ -124,9 +128,6 @@ public class GuardAI : MonoBehaviour
 
 	void Attack()
 	{
-		//Stops the Coroutine if the Enemy spots the Player.
-		StopCoroutine(PatrolState());
-		
 		float step = _speed * Time.deltaTime;
 		transform.position = Vector2.MoveTowards(transform.position, _target.transform.position, step);
 

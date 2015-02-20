@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Djamali
+
 public class LaserTrap : MonoBehaviour 
 {
 	private float _laserTimer;
