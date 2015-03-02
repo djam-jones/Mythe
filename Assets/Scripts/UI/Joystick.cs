@@ -6,74 +6,75 @@ using System.Collections;
 public class Joystick : MonoBehaviour 
 {
 
-    private Vector2 mousePosition;
-    private Vector2 originalPos;
-    private float range = 0.3f;
-    private float pivotToObj;
-    private bool move;
-    private float offsetX;
+    private Vector2 _mousePosition;
+    private Vector2 _originalPos;
+    private PlayerTools _playerTools;
+    private float _range = 0.54f;
+    private float _pivotToObj;
+    private bool _move;
+    private float _offsetX;
     public float moveSpeed = 0.1f; 
 
     void Start() 
     {
-        originalPos = transform.parent.position;
+        // TODO: Replace string with a const
+        _playerTools = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PlayerTools>();
+        _originalPos = transform.parent.position;
     }
 
-    public void Drag(bool _move) 
+    public void Drag(bool move) 
     {
-        move = _move;
+        _move = move;
     }
 
     public void FixedUpdate() 
     {
 
-        originalPos = transform.parent.position;
+        _originalPos = transform.parent.position;
 
-        mousePosition = Input.mousePosition;
-        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+        _mousePosition = Input.mousePosition;
+        _mousePosition = Camera.main.ScreenToWorldPoint(_mousePosition);
 
-        float distance = (mousePosition - originalPos).magnitude;
-        float pivotToObj = ((Vector2)transform.position - originalPos).magnitude;
-        
+        float distance = (_mousePosition - _originalPos).magnitude;
+        float pivotToObj = ((Vector2)transform.position - _originalPos).magnitude;
 
-        if (move) 
+
+        if (_move) 
         {
-            if (distance <= range) 
+            if (distance <= _range) 
             {
-                transform.position = mousePosition;
+                transform.position = _mousePosition;
             }
             else 
             {
-                Vector2 step = mousePosition - originalPos;
+                Vector2 step = _mousePosition - _originalPos;
                 step.Normalize();
-                step *= range;
+                step *= _range;
 
-                transform.position = originalPos + step;
+                transform.position = _originalPos + step;
             }
         }
         else 
         {
-            transform.position = Vector2.Lerp(transform.position, originalPos, moveSpeed * 2);
+            transform.position = Vector2.Lerp(transform.position, _originalPos, moveSpeed * 2);
         }
 
         // This will prevent the values from going crazy when trying to return to it's original position
         if (pivotToObj > 0.1f) 
         {
-            pivotToObj = ((Vector2)transform.position - originalPos).magnitude;
-            offsetX = (transform.position.x - originalPos.x) / range;
+            pivotToObj = ((Vector2)transform.position - _originalPos).magnitude;
+            _offsetX = (transform.position.x - _originalPos.x) / _range;
         }
         else 
         {
             pivotToObj = 0;
-            offsetX = 0;
+            _offsetX = 0;
         }
 
-        Debug.Log("OffsetX: " + offsetX);
+        //Debug.Log("OffsetX: " + _offsetX);
 
+        // Send the info to the PlayerTools which then sets it, I don't want this script to know who's the current target
+        _playerTools.UpdateMovement(_offsetX);
     }
-    
-    public float GetOffsetX()
-    {
-        return offsetX;
-    }
+
 }

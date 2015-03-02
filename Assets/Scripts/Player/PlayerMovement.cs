@@ -6,33 +6,49 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour 
 {
 
-    public Joystick joystick;
-    private float _movementSpeed = 3f;
-    private Rigidbody2D _body;
     private bool _isJumping;
     private float _jumpSpeed = 2f;
     private uint _jumpForce = 350;
+    private Rigidbody2D _body;
+    private float _movementSpeed = 3f;
+    private float _offsetX;
+
+    public bool moveByKeyboard;
+    public bool moveByJoystick;
+    public float offsetX {
+        set {
+            _offsetX = value;
+        }
+    }
 
     void Start() 
     {
         _body = GetComponent<Rigidbody2D>();
-        CameraFocus.SetFocusOn(gameObject);
     }
 
     void Update() 
     {
-        Move();
+        Movement();
     }
 
-    void Move() 
+    void Movement() 
     {
-        float x;
-        Vector2 velocity;
+        // So that we can easilly turn it on and off in the inspector
+        if (moveByKeyboard) {
+            float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
+            float y = Input.GetAxis("Vertical") * 20 * Time.deltaTime;
 
-        x = joystick.GetOffsetX();
-        velocity = _body.velocity;
-        velocity.x = x * _movementSpeed;
-        _body.velocity = velocity;
+            transform.Translate(new Vector2(x, y));
+        }
+
+        if (moveByJoystick) {
+            Vector2 velocity;
+
+            velocity = _body.velocity;
+            velocity.x = _offsetX * _movementSpeed;
+            _body.velocity = velocity;
+        }
+        
     }
 
     public void Jump() 
@@ -45,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D hit) 
     {
+        // TODO: Replace string with a const
         if (hit.transform.tag == "Ground") {
             _isJumping = false;
         }

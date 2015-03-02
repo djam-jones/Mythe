@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ChangeLevelFade : MonoBehaviour {
-
+public class ChangeLevelFade : MonoBehaviour 
+{
 	public Texture fadeOutTexture;
 	public float fadeSpeed = 0.8f;
 	

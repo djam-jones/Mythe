@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Djamali/EnemyScene.unity
-  - enabled: 1
     path: Assets/_Scenes/Boy/PlayerPrototype.unity
+  - enabled: 1
+    path: Assets/_Scenes/Djamali/EnemyScene.unity
