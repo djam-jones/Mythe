@@ -36,7 +36,11 @@ public class PlayerMovement : MonoBehaviour
         // So that we can easilly turn it on and off in the inspector
         if (moveByKeyboard) {
             float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
+<<<<<<< HEAD
             float y = Input.GetAxis("Vertical") * 20 * Time.deltaTime;
+=======
+            float y = Input.GetAxis("Vertical") * 10 * Time.deltaTime;
+>>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a
 
             transform.Translate(new Vector2(x, y));
         }

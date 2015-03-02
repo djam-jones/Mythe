@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+<<<<<<< HEAD
 public class TrapButton : MonoBehaviour 
 {
 	private GameObject _trapDoor;
@@ -8,6 +9,17 @@ public class TrapButton : MonoBehaviour
 	void Awake()
 	{
 		_trapDoor = GameObject.FindGameObjectWithTag("Trapdoor");
+=======
+//Djamali
+
+public class TrapButton : MonoBehaviour 
+{
+	private GameObject _trapDoor;
+
+	void Awake()
+	{
+		_trapDoor = GameObject.Find("Trap Door");
+>>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a
 	}
 	
 	void OnCollisionEnter2D(Collision2D col)
