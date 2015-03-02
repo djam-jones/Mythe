@@ -26,12 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD:Assets/Prefabs/Traps/Box.prefab
-  m_LocalPosition: {x: -22.2600002, y: .730000019, z: 0}
-=======
-  m_LocalPosition: {x: 7.30000019, y: -2, z: 0}
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a:Assets/Prefabs/Obstacle.prefab
-  m_LocalScale: {x: .863014936, y: .863014936, z: .863014936}
+  m_LocalPosition: {x: 7.25, y: -1.98000002, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -45,7 +41,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 1
-  m_FixedAngle: 1
+  m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -69,11 +65,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD:Assets/Prefabs/Traps/Box.prefab
   m_Script: {fileID: 11500000, guid: a3eb2a2bed394ac4ca9b7b3592f5cf5a, type: 3}
-=======
-  m_Script: {fileID: 11500000, guid: 178b3fb2b4ef8440f9bc2edf8b0a5e72, type: 3}
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a:Assets/Prefabs/Obstacle.prefab
   m_Name: 
   m_EditorClassIdentifier: 
   _manipulationPoints: {fileID: 0}

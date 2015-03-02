@@ -9,22 +9,12 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-<<<<<<< HEAD:Assets/Prefabs/Player/Human.prefab
-=======
-  - 114: {fileID: 11400000}
-  - 114: {fileID: 11449416}
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a:Assets/prefabs/Player.prefab
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-<<<<<<< HEAD:Assets/Prefabs/Player/Human.prefab
   m_Name: Human
   m_TagString: Human
-=======
-  m_Name: Player
-  m_TagString: Player
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a:Assets/prefabs/Player.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,21 +70,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveByKeyboard: 1
   moveByJoystick: 1
-<<<<<<< HEAD:Assets/Prefabs/Player/Human.prefab
-=======
---- !u!114 &11449416
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3eb2a2bed394ac4ca9b7b3592f5cf5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _manipulationPoints: {fileID: 0}
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a:Assets/prefabs/Player.prefab
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

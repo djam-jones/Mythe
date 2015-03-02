@@ -8,8 +8,6 @@ public class SwitchPlayer : MonoBehaviour
 
     public GameObject target01;
     public GameObject target02;
-
-    private bool _targetP1 = true;
     private PlayerTools _playerTools;
     private GameObject _currentTarget;
 

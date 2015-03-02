@@ -27,16 +27,10 @@ public class PlayerTools : MonoBehaviour
 
     public void ToggleItemManip(GameObject target) 
     {
-<<<<<<< HEAD
         if (!target.GetComponentInChildren<ManipulationPoints>()) return;
         ManipulationPoints manipulationPoints;
         manipulationPoints = target.GetComponentInChildren<ManipulationPoints>();
         manipulationPoints.enabled = !manipulationPoints.enabled;
-=======
-        ItemManipulation itemManipulation;
-        itemManipulation = target.GetComponentInChildren<ItemManipulation>();
-        itemManipulation.enabled = !itemManipulation.enabled;
->>>>>>> ea307b24d80a563fa9720516f69eccac59f18b2a
         //Debug.Log("ToggleItemManip");
     }
 
