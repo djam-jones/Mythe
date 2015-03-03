@@ -9,7 +9,7 @@ public class TrapButton : MonoBehaviour
 
 	void Awake()
 	{
-		_trapDoor = GameObject.Find("Trap Door");
+		_trapDoor = GameObject.FindGameObjectWithTag("Trapdoor");
 	}
 	
 	void OnCollisionEnter2D(Collision2D col)

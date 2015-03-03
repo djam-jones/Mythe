@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
         // So that we can easilly turn it on and off in the inspector
         if (moveByKeyboard) {
             float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
-            float y = Input.GetAxis("Vertical") * 10 * Time.deltaTime;
+            float y = Input.GetAxis("Vertical") * 20 * Time.deltaTime;
 
             transform.Translate(new Vector2(x, y));
         }
@@ -65,6 +65,19 @@ public class PlayerMovement : MonoBehaviour
         if (hit.transform.tag == "Ground") {
             _isJumping = false;
         }
+
+		if(hit.transform.tag == "MovingPlatform")
+		{
+			transform.SetParent(hit.transform);
+		}
     }
+	
+	void OnCollisionExit2D(Collision2D hit)
+	{
+		if(hit.transform.tag == "MovingPlatform")
+		{
+			transform.SetParent(null);
+		}
+	}
 
 }

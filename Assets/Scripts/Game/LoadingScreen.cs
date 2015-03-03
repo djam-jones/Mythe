@@ -27,7 +27,7 @@ public class LoadingScreen : MonoBehaviour
 		{
 			_loading = true;
 		}
-		else
+		else if(!Application.isLoadingLevel)
 		{
 			_loading = false;
 		}
@@ -38,7 +38,7 @@ public class LoadingScreen : MonoBehaviour
 		if(_loading)
 		{
 			print("Loading Level...");
-			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), _randomTexture, ScaleMode.ScaleToFit);
+			GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), _randomTexture, ScaleMode.StretchToFill);
 		}
 	}
 
