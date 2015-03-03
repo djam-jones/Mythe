@@ -10,4 +10,20 @@ public class Player : MonoBehaviour
 
 		transform.Translate(new Vector2(x, y));
 	}
+
+	void OnCollisionEnter2D(Collision2D other)
+	{
+		if(other.transform.tag == "MovingPlatform")
+		{
+			transform.SetParent(other.transform);
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D other)
+	{
+		if(other.transform.tag == "MovingPlatform")
+		{
+			transform.SetParent(null);
+		}
+	}
 }

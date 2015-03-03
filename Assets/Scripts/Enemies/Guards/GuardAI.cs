@@ -137,8 +137,8 @@ public class GuardAI : MonoBehaviour
 			//Fire gun
 			Debug.Log ("In Range");
 
-			audio.clip = guardSounds[1];
-			audio.Play();
+//			audio.clip = guardSounds[1];
+//			audio.Play();
 		}
 	}
 }

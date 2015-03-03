@@ -16,8 +16,6 @@ public class TrapButton : MonoBehaviour
 	{
 		if(col.transform.tag != null)
 		{
-			print("Turning off Door.");
-
 			//Play The DoorOpen Animation and lock it.
 			_trapDoor.GetComponent<Animator>().SetTrigger("DoorOpen");
 			//Play Trapdoor Audio.
