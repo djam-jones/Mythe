@@ -15,7 +15,6 @@ public class GuardAI : MonoBehaviour
 	public GuardStates states;
 
 	private GameObject _target;
-	private string _humanTag = "Human";
 	private bool _hasSpotted;
 	private float _speed = 2.5f;
 	private bool facingRight = false;
@@ -24,10 +23,13 @@ public class GuardAI : MonoBehaviour
 	public Transform endOfSight;
 	public GameObject alertedSprite;
 	public AudioClip[] guardSounds;
+	private AudioSource _audioSource;
 
 	void Awake()
 	{
-		_target = GameObject.FindWithTag(_humanTag);
+		_target = GameObject.FindWithTag(AllTagsScript.humanTag);
+		_audioSource = GetComponent<AudioSource>();
+
 	}
 
 	void Start()
@@ -47,20 +49,32 @@ public class GuardAI : MonoBehaviour
 //		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
 //		if(hit)
 //		{
-//			if (hit.transform.tag == "Human")
+//			if (hit.transform.tag == AllTagsScript.humanTag)
 //			{
 //				_hasSpotted = true;
 //				print("Target Seen! " + _hasSpotted);
 //			}
-//			else if(hit.transform.tag != "Human")
+//			else if(hit.transform.tag != AllTagsScript.humanTag)
 //			{
 //				_hasSpotted = false;
 //				print("Target Seen! " + _hasSpotted);
 //			}
 //		}
 
-		Debug.DrawLine(transform.position, endOfSight.position, Color.green);
-		_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
+//		Debug.DrawLine(transform.position, endOfSight.position, Color.green);
+//		_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
+
+		float distance = Vector3.Distance(transform.position, _target.transform.position);
+
+		if(Vector3.Angle(transform.position, endOfSight.position - transform.position) < 15f)
+		{
+				//_hasSpotted = true;
+				Debug.Log("I see you nigga!");
+		}
+		else
+		{
+			_hasSpotted = false;
+		}
 	}
 
 	void SetState()
@@ -71,9 +85,6 @@ public class GuardAI : MonoBehaviour
 		}
 		else if(states == GuardStates.attacking)
 		{
-			//Stops the Coroutine if the Enemy spots the Player.
-			StopCoroutine(PatrolState());
-
 			//Attack the Player
 			Attack();
 		}
@@ -112,9 +123,12 @@ public class GuardAI : MonoBehaviour
 		{
 			Debug.Log("Spotted");
 
-			audio.clip = guardSounds[0];
-			audio.Play();
+			_audioSource.clip = guardSounds[0];
+			_audioSource.Play();
 			alertedSprite.SetActive(true);
+
+			//Stops the Coroutine if the Enemy spots the Player.
+			StopCoroutine(PatrolState());
 
 			//Set the Guards State to Attack.
 			states = GuardStates.attacking;
@@ -136,9 +150,6 @@ public class GuardAI : MonoBehaviour
 		{
 			//Fire gun
 			Debug.Log ("In Range");
-
-//			audio.clip = guardSounds[1];
-//			audio.Play();
 		}
 	}
 }

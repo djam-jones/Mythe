@@ -13,17 +13,14 @@ public class ChangeLevelFade : MonoBehaviour
 	private bool _humanIn;
 	private bool _alienIn;
 
-	private string _humanTag = "Human";
-	private string _alienTag = "Alien";
-
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == _humanTag)
+		if(other.transform.tag == AllTagsScript.humanTag)
 		{
 			Debug.Log ("Human Is In!");
 			_humanIn = true;
 		}
-		if(other.transform.tag == _alienTag)
+		if(other.transform.tag == AllTagsScript.alienTag)
 		{
 			Debug.Log ("Alien Is In!");
 			_alienIn = true;
@@ -40,7 +37,7 @@ public class ChangeLevelFade : MonoBehaviour
 	{
 		float fadeTime = BeginFade(1);
 		yield return new WaitForSeconds(fadeTime);
-		Application.LoadLevel(lvlIndex);
+		Application.LoadLevelAsync(lvlIndex);
 	}
 
 	void OnGUI()
@@ -61,7 +58,7 @@ public class ChangeLevelFade : MonoBehaviour
 	
 	void OnLevelWasLoaded()
 	{
-		BeginFade(1);
+		BeginFade(-1);
 	}
 
 }

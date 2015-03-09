@@ -56,17 +56,17 @@ public class PlayerMovement : MonoBehaviour
         if (_isJumping) return;
         _isJumping = true;
 
-        transform.rigidbody2D.AddForce(Vector2.up * _jumpSpeed * _jumpForce);
+        transform.GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpSpeed * _jumpForce);
     }
     
     private void OnCollisionEnter2D(Collision2D hit) 
     {
         // TODO: Replace string with a const
-        if (hit.transform.tag == "Ground") {
+        if (hit.transform.tag == AllTagsScript.groundTag) {
             _isJumping = false;
         }
 
-		if(hit.transform.tag == "MovingPlatform")
+		if(hit.transform.tag == AllTagsScript.platformTag)
 		{
 			transform.SetParent(hit.transform);
 		}
@@ -74,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
 	
 	void OnCollisionExit2D(Collision2D hit)
 	{
-		if(hit.transform.tag == "MovingPlatform")
+		if(hit.transform.tag == AllTagsScript.platformTag)
 		{
 			transform.SetParent(null);
 		}
