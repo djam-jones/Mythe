@@ -20,6 +20,7 @@ public class ObjectManipulation : MonoBehaviour
 
 	void Update () 
 	{
+
 		_mousePos = _camera.ScreenToWorldPoint(Input.mousePosition);	
 		_mousePos.z = 0;
 		RaycastHit hit;
@@ -37,11 +38,12 @@ public class ObjectManipulation : MonoBehaviour
 				}
 			}
 		}
-		if(Input.GetMouseButton (0))
+
+		else if(Input.GetMouseButtonUp (0))
 		{
 			_recharge = true;
 		}
-		if(_recharge = true && _points < 100)
+		if(_recharge == true && _points < 100)
 		{
 			_points += Time.deltaTime * _increase;
 			_pointBar.size = _points/100f;
