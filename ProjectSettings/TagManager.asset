@@ -3,11 +3,16 @@
 --- !u!78 &1
 TagManager:
   tags:
-  - 
+  - Score
   - Object
   - Joystick
   - Trapdoor
   - Trap
+  - PlayerData
+  - Alien
+  - GameManager
+  - Human
+  - Ground
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

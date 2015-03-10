@@ -8,6 +8,7 @@ public class SwitchPlayer : MonoBehaviour
 
     public GameObject target01;
     public GameObject target02;
+    public GameObject uiJump;
     private PlayerTools _playerTools;
     private GameObject _currentTarget;
 
@@ -31,10 +32,12 @@ public class SwitchPlayer : MonoBehaviour
         if (_currentTarget == target01) 
         {
             _playerTools.TogglePlayerFocus(target02);
+            uiJump.SetActive(false);
         }
         else 
         {
             _playerTools.TogglePlayerFocus(target01);
+            uiJump.SetActive(true);
         }
         
         _currentTarget = CameraFocus.target;

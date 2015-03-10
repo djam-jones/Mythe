@@ -15,8 +15,10 @@ public class PlayerMovement : MonoBehaviour
 
     public bool moveByKeyboard;
     public bool moveByJoystick;
-    public float offsetX {
-        set {
+    public float offsetX 
+    {
+        set 
+        {
             _offsetX = value;
         }
     }
@@ -34,14 +36,16 @@ public class PlayerMovement : MonoBehaviour
     void Movement() 
     {
         // So that we can easilly turn it on and off in the inspector
-        if (moveByKeyboard) {
+        if (moveByKeyboard) 
+        {
             float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
             float y = Input.GetAxis("Vertical") * 20 * Time.deltaTime;
 
             transform.Translate(new Vector2(x, y));
         }
 
-        if (moveByJoystick) {
+        if (moveByJoystick) 
+        {
             Vector2 velocity;
 
             velocity = _body.velocity;
@@ -56,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         if (_isJumping) return;
         _isJumping = true;
 
-        transform.rigidbody2D.AddForce(Vector2.up * _jumpSpeed * _jumpForce);
+        transform.GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpSpeed * _jumpForce);
     }
     
     private void OnCollisionEnter2D(Collision2D hit) 

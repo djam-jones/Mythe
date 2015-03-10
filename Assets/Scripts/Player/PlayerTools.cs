@@ -18,29 +18,30 @@ public class PlayerTools : MonoBehaviour
         _playerMovement = defaultTarget.GetComponentInChildren<PlayerMovement>();
     }
     
+    // Toggle PlayerMovement
     public void ToggleMovement(GameObject target) 
     {
         _playerMovement = target.GetComponentInChildren<PlayerMovement>();
         _playerMovement.enabled = !_playerMovement.enabled;
-        //Debug.Log("ToggleMovement");
     }
 
+    // Toggle ItemManipulation
     public void ToggleItemManip(GameObject target) 
     {
         if (!target.GetComponentInChildren<ManipulationPoints>()) return;
         ManipulationPoints manipulationPoints;
         manipulationPoints = target.GetComponentInChildren<ManipulationPoints>();
         manipulationPoints.enabled = !manipulationPoints.enabled;
-        //Debug.Log("ToggleItemManip");
     }
 
+    // Toggle Camera's focus between players
     public void TogglePlayerFocus(GameObject target) 
     {
         _currentTarget = target;
         CameraFocus.target = _currentTarget;
-        //Debug.Log("TogglePlayerFocus");
     }
 
+    // Update Player's PlayerMovement
     public void UpdateMovement(float _offsetX) 
     {
         _playerMovement.offsetX = _offsetX;

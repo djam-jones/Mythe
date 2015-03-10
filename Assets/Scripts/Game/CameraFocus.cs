@@ -7,12 +7,15 @@ public class CameraFocus : MonoBehaviour
 {
     private static GameObject _target;
 
-    public static GameObject target {
-        get {
+    public static GameObject target 
+    {
+        get 
+        {
             //Debug.Log("Get - Camera target = " + _target);
             return _target;
         }
-        set {
+        set 
+        {
             //Debug.Log("Set - Camera Target to: " + value);
             _target = value;
         }

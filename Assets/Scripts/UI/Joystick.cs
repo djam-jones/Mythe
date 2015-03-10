@@ -9,7 +9,7 @@ public class Joystick : MonoBehaviour
     private Vector2 _mousePosition;
     private Vector2 _originalPos;
     private PlayerTools _playerTools;
-    private float _range = 0.54f;
+    private float _range = 0.40f;
     private float _pivotToObj;
     private bool _move;
     private float _offsetX;
@@ -38,24 +38,28 @@ public class Joystick : MonoBehaviour
         float distance = (_mousePosition - _originalPos).magnitude;
         float pivotToObj = ((Vector2)transform.position - _originalPos).magnitude;
 
-
+        // When dragging
         if (_move) 
         {
-            if (distance <= _range) 
+            // If is in circle
+            Vector3 newPosition = _mousePosition;
+
+            if (distance > _range) 
             {
-                transform.position = _mousePosition;
-            }
-            else 
-            {
+                // Move towards the place of the mouse, but stay in the bounds
                 Vector2 step = _mousePosition - _originalPos;
                 step.Normalize();
                 step *= _range;
 
-                transform.position = _originalPos + step;
+                newPosition = _originalPos + step;
             }
+
+            // Apply it
+            transform.position = newPosition;
         }
         else 
         {
+            // When drag is released, lerp back to original position
             transform.position = Vector2.Lerp(transform.position, _originalPos, moveSpeed * 2);
         }
 

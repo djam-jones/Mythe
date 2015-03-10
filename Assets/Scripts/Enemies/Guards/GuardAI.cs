@@ -112,8 +112,8 @@ public class GuardAI : MonoBehaviour
 		{
 			Debug.Log("Spotted");
 
-			audio.clip = guardSounds[0];
-			audio.Play();
+			GetComponent<AudioSource>().clip = guardSounds[0];
+			GetComponent<AudioSource>().Play();
 			alertedSprite.SetActive(true);
 
 			//Set the Guards State to Attack.
@@ -137,8 +137,8 @@ public class GuardAI : MonoBehaviour
 			//Fire gun
 			Debug.Log ("In Range");
 
-			audio.clip = guardSounds[1];
-			audio.Play();
+			GetComponent<AudioSource>().clip = guardSounds[1];
+			GetComponent<AudioSource>().Play();
 		}
 	}
 }
