@@ -6,10 +6,12 @@ using System.Collections;
 public class Trapdoor : MonoBehaviour 
 {
 	private Animator _doorAnimator;
+	private AudioSource _doorAudio;
 
 	void Awake()
 	{
 		_doorAnimator = GetComponent<Animator>();
+		_doorAudio = GetComponent<AudioSource>();
 	}
 	
 	void OnTriggerEnter2D(Collider2D other)
@@ -28,7 +30,7 @@ public class Trapdoor : MonoBehaviour
 	
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if(other.transform.tag == "Human" && other.transform.tag == "Alien")
+		if(other.transform.tag == AllTagsScript.humanTag && other.transform.tag == AllTagsScript.alienTag)
 		{
 			_doorAnimator.SetTrigger("DoorOpen");
 			//Play Door Audio

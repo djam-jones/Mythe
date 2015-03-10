@@ -23,7 +23,7 @@ public class CameraFocus : MonoBehaviour
 
 	void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, new Vector3(_target.transform.position.x, _target.transform.position.y, -10), 5f * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(_target.transform.position.x, _target.transform.position.y, -10), 5f * Time.deltaTime);
 	}
 
 }

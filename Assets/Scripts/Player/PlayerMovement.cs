@@ -66,9 +66,22 @@ public class PlayerMovement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D hit) 
     {
         // TODO: Replace string with a const
-        if (hit.transform.tag == "Ground") {
+        if (hit.transform.tag == AllTagsScript.groundTag) {
             _isJumping = false;
         }
+
+		if(hit.transform.tag == AllTagsScript.platformTag)
+		{
+			transform.SetParent(hit.transform);
+		}
     }
+	
+	void OnCollisionExit2D(Collision2D hit)
+	{
+		if(hit.transform.tag == AllTagsScript.platformTag)
+		{
+			transform.SetParent(null);
+		}
+	}
 
 }

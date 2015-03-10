@@ -26,12 +26,12 @@ public class ChangeLevelFade : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == _humanTag)
+		if(other.transform.tag == AllTagsScript.humanTag)
 		{
 			Debug.Log ("Human Is In!");
 			_humanIn = true;
 		}
-		if(other.transform.tag == _alienTag)
+		if(other.transform.tag == AllTagsScript.alienTag)
 		{
 			Debug.Log ("Alien Is In!");
 			_alienIn = true;
@@ -51,7 +51,6 @@ public class ChangeLevelFade : MonoBehaviour
         
         if (playerData.score > playerData.highscore)
         {
-            
             playerData.highscore = playerData.score;
             Debug.Log("Highscore! " + playerData.highscore);
             Application.LoadLevel(HIGHSCORE);
@@ -59,10 +58,8 @@ public class ChangeLevelFade : MonoBehaviour
         else 
         {
             Debug.Log("No highscore...");
-            Application.LoadLevel("PrototypeLvl01");
+            Application.LoadLevelAsync(lvlIndex);
         }
-		
-		
 	}
 
 	void OnGUI()
