@@ -557,6 +557,10 @@ Prefab:
       propertyPath: playerData
       value: 
       objectReference: {fileID: 1326826331}
+    - target: {fileID: 11400006, guid: 24f5bcc74e59e8344a9be7e8e3dd0148, type: 2}
+      propertyPath: counting
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 24f5bcc74e59e8344a9be7e8e3dd0148, type: 2}
   m_IsPrefabParent: 0
