@@ -15,15 +15,20 @@ public class PlayerMovement : MonoBehaviour
 
     public bool moveByKeyboard;
     public bool moveByJoystick;
-    public float offsetX {
-        set {
+	private GameObject _respawnPoint;
+
+    public float offsetX 
+    {
+        set 
+        {
             _offsetX = value;
         }
     }
 
-    void Start() 
+    void Awake() 
     {
         _body = GetComponent<Rigidbody2D>();
+		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsScript.respawnTag);
     }
 
     void Update() 
@@ -34,14 +39,16 @@ public class PlayerMovement : MonoBehaviour
     void Movement() 
     {
         // So that we can easilly turn it on and off in the inspector
-        if (moveByKeyboard) {
+        if (moveByKeyboard) 
+        {
             float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
             float y = Input.GetAxis("Vertical") * 20 * Time.deltaTime;
 
             transform.Translate(new Vector2(x, y));
         }
 
-        if (moveByJoystick) {
+        if (moveByJoystick) 
+        {
             Vector2 velocity;
 
             velocity = _body.velocity;
@@ -69,6 +76,12 @@ public class PlayerMovement : MonoBehaviour
 		if(hit.transform.tag == AllTagsScript.platformTag)
 		{
 			transform.SetParent(hit.transform);
+		}
+
+		if(hit.transform.tag == AllTagsScript.trapTag)
+		{
+			//Return to Respawn Point if you hit a trap
+			transform.position = _respawnPoint.transform.position;
 		}
     }
 	

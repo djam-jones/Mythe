@@ -17,4 +17,5 @@ public class AllTagsScript : MonoBehaviour
 	public const string objectTag		= "Object";
 	public const string guardTag		= "Guard";
 	public const string joystickTag		= "Joystick";
+	public const string respawnTag		= "Respawn";
 }

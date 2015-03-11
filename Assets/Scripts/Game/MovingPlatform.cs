@@ -10,6 +10,7 @@ public class MovingPlatform : MonoBehaviour
 	private Transform _target;
 	private int _waypointIndex;
 	public Transform[] waypoints;
+	public float platformSpeed = 1.2f;
 
 	void Start()
 	{
@@ -27,7 +28,7 @@ public class MovingPlatform : MonoBehaviour
 	public IEnumerator Move()
 	{
 		//Move this Platform to one of the set target.
-		transform.position = Vector2.MoveTowards(this.transform.position, _target.position, 1.2f * Time.deltaTime);
+		transform.position = Vector2.MoveTowards(this.transform.position, _target.position, platformSpeed * Time.deltaTime);
 
 		if(waypoints.Length != null)
 		{

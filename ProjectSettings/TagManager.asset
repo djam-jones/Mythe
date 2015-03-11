@@ -4,16 +4,16 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Score
   - Object
   - Joystick
   - Trapdoor
   - Trap
-  - Human
+  - PlayerData
   - Alien
-  - Ground
-  - MovingPlatform
   - GameManager
-  - Guard
+  - Human
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -23,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - Player
+  - OverlayLayer
   - 
   - 
   - 

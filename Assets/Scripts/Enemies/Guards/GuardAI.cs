@@ -122,9 +122,10 @@ public class GuardAI : MonoBehaviour
 		if(_hasSpotted == true)
 		{
 			Debug.Log("Spotted");
-
-			_audioSource.clip = guardSounds[0];
+			
+            _audioSource.clip = guardSounds[0];
 			_audioSource.Play();
+
 			alertedSprite.SetActive(true);
 
 			//Stops the Coroutine if the Enemy spots the Player.

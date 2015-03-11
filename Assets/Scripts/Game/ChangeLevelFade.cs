@@ -13,6 +13,17 @@ public class ChangeLevelFade : MonoBehaviour
 	private bool _humanIn;
 	private bool _alienIn;
 
+	private string _humanTag = "Human";
+	private string _alienTag = "Alien";
+
+    private PlayerData playerData;
+    private const string HIGHSCORE = "HighScore";
+
+    void Start() 
+    {
+        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+    }
+
 	void OnTriggerEnter2D(Collider2D other)
 	{
 		if(other.transform.tag == AllTagsScript.humanTag)
@@ -35,9 +46,20 @@ public class ChangeLevelFade : MonoBehaviour
 
 	IEnumerator ChangeLevel(int lvlIndex)
 	{
-		float fadeTime = BeginFade(1);
+        float fadeTime = BeginFade(1);
 		yield return new WaitForSeconds(fadeTime);
-		Application.LoadLevelAsync(lvlIndex);
+        
+        if (playerData.score > playerData.highscore)
+        {
+            playerData.highscore = playerData.score;
+            Debug.Log("Highscore! " + playerData.highscore);
+            Application.LoadLevel(HIGHSCORE);
+        } 
+        else 
+        {
+            Debug.Log("No highscore...");
+            Application.LoadLevelAsync(lvlIndex);
+        }
 	}
 
 	void OnGUI()
@@ -52,6 +74,7 @@ public class ChangeLevelFade : MonoBehaviour
 	
 	public float BeginFade(int direction)
 	{
+        Debug.Log("BeginFade");
 		fadeDir = direction;
 		return fadeSpeed;
 	}
@@ -59,6 +82,7 @@ public class ChangeLevelFade : MonoBehaviour
 	void OnLevelWasLoaded()
 	{
 		BeginFade(-1);
+        Debug.Log("OnLevelWasLoaded");
 	}
 
 }
