@@ -7,6 +7,7 @@ public class Trapdoor : MonoBehaviour
 {
 	private Animator _doorAnimator;
 	private AudioSource _doorAudio;
+	private AudioClip[] _doorAudioFragments;
 
 	void Awake()
 	{
@@ -16,25 +17,29 @@ public class Trapdoor : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == "Human")
+		if(other.transform.tag == AllTagsScript.humanTag || other.transform.tag == AllTagsScript.alienTag)
 		{
-			_doorAnimator.SetTrigger("DoorClose");
-			//Play Door Audio
-		}
-		else if(other.transform.tag == "Alien")
-		{
-			_doorAnimator.SetTrigger("DoorClose");
-			//Play Door Audio
+			Close();
 		}
 	}
-	
+
 	void OnTriggerExit2D(Collider2D other)
 	{
 		if(other.transform.tag == AllTagsScript.humanTag && other.transform.tag == AllTagsScript.alienTag)
 		{
-			_doorAnimator.SetTrigger("DoorOpen");
-			//Play Door Audio
+			Open();
 		}
 	}
 
+	public void Open()
+	{
+		_doorAnimator.SetTrigger("DoorOpen");
+		//Play Door Audio
+	}
+
+	public void Close()
+	{
+		_doorAnimator.SetTrigger("DoorClose");
+		//Play Door Audio
+	}
 }
