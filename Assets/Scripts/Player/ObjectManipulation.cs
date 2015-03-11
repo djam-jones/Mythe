@@ -26,7 +26,7 @@ public class ObjectManipulation : MonoBehaviour
 		RaycastHit hit;
 		if(Input.GetMouseButton (0) && _points > 0)
 		{
-			if(Physics.Raycast(transform.position, _mousePos - transform.position, out hit, 1000f))
+			if(Physics.Raycast(transform.position, _mousePos - transform.position, out hit))
 			{
 				if(hit.collider.tag == "Object" && _mousePos.x - hit.collider.transform.position.x <= 1 && _mousePos.y - hit.collider.transform.position.y <= 1)
 				{
