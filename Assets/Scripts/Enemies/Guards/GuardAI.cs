@@ -66,7 +66,7 @@ public class GuardAI : MonoBehaviour
 
 		float distance = Vector3.Distance(transform.position, _target.transform.position);
 
-		if(Vector3.Angle(transform.position, endOfSight.position - transform.position) < 15f)
+		if(Vector2.Angle(transform.position, endOfSight.position) < 15f)
 		{
 				//_hasSpotted = true;
 				Debug.Log("I see you nigga!");

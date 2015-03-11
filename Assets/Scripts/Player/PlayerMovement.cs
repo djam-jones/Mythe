@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
 
     public bool moveByKeyboard;
     public bool moveByJoystick;
+	private GameObject _respawnPoint;
+
     public float offsetX 
     {
         set 
@@ -23,9 +25,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Start() 
+    void Awake() 
     {
         _body = GetComponent<Rigidbody2D>();
+		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsScript.respawnTag);
     }
 
     void Update() 
@@ -73,6 +76,12 @@ public class PlayerMovement : MonoBehaviour
 		if(hit.transform.tag == AllTagsScript.platformTag)
 		{
 			transform.SetParent(hit.transform);
+		}
+
+		if(hit.transform.tag == AllTagsScript.trapTag)
+		{
+			//Return to Respawn Point if you hit a trap
+			transform.position = _respawnPoint.transform.position;
 		}
     }
 	
