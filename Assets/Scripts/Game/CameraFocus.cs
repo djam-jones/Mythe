@@ -6,6 +6,7 @@ using System.Collections;
 public class CameraFocus : MonoBehaviour 
 {
     private static GameObject _target;
+    private float speed = 5f;
 
     public static GameObject target 
     {
@@ -23,7 +24,11 @@ public class CameraFocus : MonoBehaviour
 
 	void Update()
     {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, new Vector3(_target.transform.position.x, _target.transform.position.y, -10), 5f * Time.deltaTime);
+        //while ((_target.transform.position - transform.position).magnitude > 5)
+        //{
+        //    speed += 1f;
+        //}
+        transform.position = Vector3.MoveTowards(transform.position, new Vector3(_target.transform.position.x, _target.transform.position.y, -10), speed * Time.deltaTime);
 	}
 
 }

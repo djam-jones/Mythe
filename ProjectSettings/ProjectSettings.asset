@@ -28,7 +28,7 @@ PlayerSettings:
   m_UseDX11: 1
   m_Stereoscopic3D: 0
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: -1
+  androidShowActivityIndicatorOnLoading: 2
   iosAppInBackgroundBehavior: 0
   displayResolutionDialog: 1
   allowedAutorotateToPortrait: 0
@@ -82,7 +82,7 @@ PlayerSettings:
   xboxOneDisableKinectGpuReservation: 0
   productGUID: 25fb556dc7cb1492cb626c8176b38a5d
   AndroidBundleVersionCode: 1
-  AndroidMinSdkVersion: 16
+  AndroidMinSdkVersion: 21
   AndroidPreferredInstallLocation: 1
   aotOptions: 
   apiCompatibilityLevel: 2

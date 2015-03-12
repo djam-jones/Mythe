@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool _isJumping;
     private float _jumpSpeed = 2f;
-    private uint _jumpForce = 350;
+    private uint _jumpForce = 450;
     private Rigidbody2D _body;
     private float _movementSpeed = 3f;
     private float _offsetX;
