@@ -110,10 +110,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 349862676}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .753362298, y: 4.40632915, z: -12.1316586}
+  m_LocalPosition: {x: .106000006, y: 2.01599979, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 441160227}
+  m_Father: {fileID: 1376339408}
   m_RootOrder: 0
 --- !u!212 &349862678
 SpriteRenderer:
@@ -191,11 +191,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 365361786}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .863362312, y: 6.36632919, z: -12.1316586}
+  m_LocalPosition: {x: .863362312, y: 6.36632919, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 441160227}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!61 &365361790
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -288,11 +288,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 412799442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -20}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &441160226
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,7 +318,6 @@ Transform:
   m_LocalPosition: {x: 0, y: -1.51999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 349862677}
   - {fileID: 1376339408}
   - {fileID: 365361788}
   m_Father: {fileID: 0}
@@ -396,7 +395,7 @@ Transform:
   m_LocalScale: {x: 10, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &1376339407
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,8 +405,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1376339408}
   - 212: {fileID: 1376339409}
-  - 114: {fileID: 1376339410}
   - 61: {fileID: 1376339411}
+  - 114: {fileID: 1376339410}
   m_Layer: 0
   m_Name: pijp_lijding-04
   m_TagString: Untagged
@@ -422,11 +421,12 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1376339407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .647362292, y: 2.39032936, z: -12.1316586}
+  m_LocalPosition: {x: .647362292, y: 2.39032936, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 349862677}
   m_Father: {fileID: 441160227}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!212 &1376339409
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -464,7 +464,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad8b031d17baad045b1bac5f9d0460ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Destination: {fileID: 365361788}
+  _destination: {fileID: 365361788}
+  _alien: {fileID: 1499311039}
 --- !u!61 &1376339411
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -478,6 +479,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: .670000017, y: .670000017}
+--- !u!1 &1499311039
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: e2251feb395733a4587d0b0cee71cdf8, type: 2}
+  m_PrefabInternal: {fileID: 1574246939}
 --- !u!1001 &1574246939
 Prefab:
   m_ObjectHideFlags: 0
