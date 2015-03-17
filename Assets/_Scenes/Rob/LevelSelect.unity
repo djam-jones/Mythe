@@ -543,7 +543,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 510568812}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1336909558}
+        m_MethodName: LeftButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &510568812
@@ -579,7 +591,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 510568810}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -778,7 +790,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 910109954}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1336909558}
+        m_MethodName: RightButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &910109954
@@ -1011,6 +1035,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af726819ab92d3347b0ce13657fc74b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _levelButton1: {fileID: 389249373}
+  _levelButton2: {fileID: 1593917270}
+  _levelButton3: {fileID: 1332719800}
+  _levelButton4: {fileID: 492266497}
+  _levelButton5: {fileID: 795412335}
+  _lArrow: {fileID: 510568810}
+  _rArrow: {fileID: 910109951}
 --- !u!4 &1336909559
 Transform:
   m_ObjectHideFlags: 0
