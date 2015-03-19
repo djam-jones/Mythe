@@ -4,13 +4,13 @@ using System.Collections;
 
 public class MoveThroughTube : MonoBehaviour 
 {
-	[SerializeField]
-	private Transform _destination;
-	[SerializeField]
-	private GameObject _alien;
+	[SerializeField] private uint _duration = 1;
+    [SerializeField] private Transform _destination;
+    [SerializeField] private GameObject _alien;
     private SpriteRenderer _alienSpriteR;
     private BoxCollider2D _alienColl;
     private Rigidbody2D _alienRB;
+    
 
 	void OnTriggerEnter2D (Collider2D Other)
 	{
@@ -19,6 +19,7 @@ public class MoveThroughTube : MonoBehaviour
 			StartCoroutine(GoThrough());
 		}
 	}
+
 	IEnumerator GoThrough ()
 	{
         _alienSpriteR = _alien.GetComponentInChildren<SpriteRenderer>();
@@ -28,7 +29,7 @@ public class MoveThroughTube : MonoBehaviour
         _alienColl.enabled = false;
         _alienRB.isKinematic = true;
         _alien.transform.position = _destination.position;
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(_duration);
         _alien.transform.position = _destination.position;
         _alienSpriteR.enabled = true;
         _alienColl.enabled = true;
