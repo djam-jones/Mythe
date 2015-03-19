@@ -6,32 +6,29 @@ public class ChangeLevelFade : MonoBehaviour
 	public Texture fadeOutTexture;
 	public float fadeSpeed = 0.8f;
 	
-	private int drawDepth = -1000;
-	private float alpha = 1f;
-	private int fadeDir = -1;
+	private int _drawDepth = -1000;
+	private float _alpha = 1f;
+	private int _fadeDir = -1;
 
 	private bool _humanIn;
 	private bool _alienIn;
 
-	private string _humanTag = "Human";
-	private string _alienTag = "Alien";
-
-    private PlayerData playerData;
-    private const string HIGHSCORE = "HighScore";
+    private PlayerData _playerData;
+    private const string _HIGHSCORE = "HighScore";
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        _playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
     }
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == AllTagsScript.humanTag)
+		if(other.transform.tag == AllTagsConstants.humanTag)
 		{
 			Debug.Log ("Human Is In!");
 			_humanIn = true;
 		}
-		if(other.transform.tag == AllTagsScript.alienTag)
+		if(other.transform.tag == AllTagsConstants.alienTag)
 		{
 			Debug.Log ("Alien Is In!");
 			_alienIn = true;
@@ -49,11 +46,11 @@ public class ChangeLevelFade : MonoBehaviour
         float fadeTime = BeginFade(1);
 		yield return new WaitForSeconds(fadeTime);
         
-        if (playerData.score > playerData.highscore)
+        if (_playerData.score > _playerData.highscore)
         {
-            playerData.highscore = playerData.score;
-            Debug.Log("Highscore! " + playerData.highscore);
-            Application.LoadLevel(HIGHSCORE);
+            _playerData.highscore = _playerData.score;
+            Debug.Log("Highscore! " + _playerData.highscore);
+            Application.LoadLevel(_HIGHSCORE);
         } 
         else 
         {
@@ -64,18 +61,18 @@ public class ChangeLevelFade : MonoBehaviour
 
 	void OnGUI()
 	{
-		alpha += fadeDir * fadeSpeed * Time.deltaTime;
-		alpha = Mathf.Clamp01(alpha);
+		_alpha += _fadeDir * fadeSpeed * Time.deltaTime;
+		_alpha = Mathf.Clamp01(_alpha);
 		
-		GUI.color = new Color(GUI.color.r, GUI.color.g, GUI.color.b, alpha);
-		GUI.depth = drawDepth;
+		GUI.color = new Color(GUI.color.r, GUI.color.g, GUI.color.b, _alpha);
+		GUI.depth = _drawDepth;
 		GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), fadeOutTexture);
 	}
 	
 	public float BeginFade(int direction)
 	{
         Debug.Log("BeginFade");
-		fadeDir = direction;
+		_fadeDir = direction;
 		return fadeSpeed;
 	}
 	

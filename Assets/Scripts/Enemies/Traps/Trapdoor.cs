@@ -17,7 +17,7 @@ public class Trapdoor : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == AllTagsScript.humanTag || other.transform.tag == AllTagsScript.alienTag)
+		if(other.transform.tag == AllTagsConstants.humanTag || other.transform.tag == AllTagsConstants.alienTag)
 		{
 			Close();
 		}
@@ -25,7 +25,7 @@ public class Trapdoor : MonoBehaviour
 
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if(other.transform.tag == AllTagsScript.humanTag && other.transform.tag == AllTagsScript.alienTag)
+		if(other.transform.tag == AllTagsConstants.humanTag && other.transform.tag == AllTagsConstants.alienTag)
 		{
 			Open();
 		}

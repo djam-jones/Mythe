@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     void Awake() 
     {
         _body = GetComponent<Rigidbody2D>();
-		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsScript.respawnTag);
+		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsConstants.respawnTag);
     }
 
     void Update() 
@@ -68,17 +68,16 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D hit) 
     {
-        // TODO: Replace string with a const
-        if (hit.transform.tag == AllTagsScript.groundTag) {
+		if (hit.transform.tag == AllTagsConstants.groundTag) {
             _isJumping = false;
         }
 
-		if(hit.transform.tag == AllTagsScript.platformTag)
+		if(hit.transform.tag == AllTagsConstants.platformTag)
 		{
 			transform.SetParent(hit.transform);
 		}
 
-		if(hit.transform.tag == AllTagsScript.trapTag)
+		if(hit.transform.tag == AllTagsConstants.trapTag)
 		{
 			//Return to Respawn Point if you hit a trap
 			transform.position = _respawnPoint.transform.position;
@@ -87,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 	
 	void OnCollisionExit2D(Collision2D hit)
 	{
-		if(hit.transform.tag == AllTagsScript.platformTag)
+		if(hit.transform.tag == AllTagsConstants.platformTag)
 		{
 			transform.SetParent(null);
 		}

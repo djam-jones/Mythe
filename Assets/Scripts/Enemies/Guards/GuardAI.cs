@@ -27,7 +27,7 @@ public class GuardAI : MonoBehaviour
 
 	void Awake()
 	{
-		_target = GameObject.FindWithTag(AllTagsScript.humanTag);
+		_target = GameObject.FindWithTag(AllTagsConstants.humanTag);
 		_audioSource = GetComponent<AudioSource>();
 
 	}
@@ -46,24 +46,6 @@ public class GuardAI : MonoBehaviour
 
 	void SearchForPlayer()
 	{
-//		RaycastHit2D hit = Physics2D.Raycast(transform.position, endOfSight.position - transform.position);
-//		if(hit)
-//		{
-//			if (hit.transform.tag == AllTagsScript.humanTag)
-//			{
-//				_hasSpotted = true;
-//				print("Target Seen! " + _hasSpotted);
-//			}
-//			else if(hit.transform.tag != AllTagsScript.humanTag)
-//			{
-//				_hasSpotted = false;
-//				print("Target Seen! " + _hasSpotted);
-//			}
-//		}
-
-//		Debug.DrawLine(transform.position, endOfSight.position, Color.green);
-//		_hasSpotted = Physics2D.Linecast(transform.position, endOfSight.position, 1 << LayerMask.NameToLayer("Player"));
-
 		float distance = Vector3.Distance(transform.position, _target.transform.position);
 
 		if(Vector2.Angle(transform.position, endOfSight.position) < 15f)
