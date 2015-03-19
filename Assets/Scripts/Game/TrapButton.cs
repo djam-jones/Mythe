@@ -7,6 +7,7 @@ public class TrapButton : MonoBehaviour
 {
 	public GameObject trapDoor;
 	public GameObject movingPlatform;
+	public GameObject turret;
 	private MovingPlatform _movingPlatformScript;
 
 	void Awake()
@@ -27,12 +28,16 @@ public class TrapButton : MonoBehaviour
 				//Play Trapdoor Audio.
 			}
 
-			if(movingPlatform != null)
+			else if(movingPlatform != null)
 			{
 				if(_movingPlatformScript != null)
 				{
 					StopCoroutine(_movingPlatformScript.Move());
 				}
+			}
+			else if(turret != null)
+			{
+				//Stop The Turret.
 			}
 
 			//Turn off the Trapdoor.
