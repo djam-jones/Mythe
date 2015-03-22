@@ -11,19 +11,18 @@ public class SwitchPlayer : MonoBehaviour
     public GameObject uiJump;
     private PlayerTools _playerTools;
     private GameObject _currentTarget;
+    private CameraFocus _cameraFocus;
 
     void Start() 
     {
-        // TODO: Replace string with a const
-        _playerTools = GameObject.FindGameObjectWithTag("GameManager").GetComponent<PlayerTools>();
+        _cameraFocus = GameObject.FindGameObjectWithTag(AllTagsConstants.MainCamera).GetComponent<CameraFocus>();
+        _playerTools = GameObject.FindGameObjectWithTag(AllTagsConstants.gameManagerTag).GetComponent<PlayerTools>();
     }
 
     // Check who to disable/enable, then send it to the PlayerTools so that it doesn't have to calculate/check anything there
     public void CheckPlayer() 
-    {
-        //Debug.Log("CheckPlayer");
-
-        _currentTarget = CameraFocus.target;
+    {   
+        _currentTarget = _cameraFocus.target;
         // Disable current target
         _playerTools.ToggleMovement(_currentTarget);
         _playerTools.ToggleItemManip(_currentTarget);
@@ -40,7 +39,7 @@ public class SwitchPlayer : MonoBehaviour
             uiJump.SetActive(true);
         }
         
-        _currentTarget = CameraFocus.target;
+        _currentTarget = _cameraFocus.target;
         // Enable new target
         _playerTools.ToggleMovement(_currentTarget);
         _playerTools.ToggleItemManip(_currentTarget);

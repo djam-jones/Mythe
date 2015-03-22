@@ -11,7 +11,7 @@ public class MovingPlatform : MonoBehaviour
 	private int _waypointIndex;
 	public Transform[] waypoints;
 	public float platformSpeed = 1.2f;
-	public float waitTime = 0.2f;
+	private float _waitTime = 0.2f;
 
 	void Start()
 	{
@@ -43,7 +43,7 @@ public class MovingPlatform : MonoBehaviour
 			}
 		}
 
-		yield return new WaitForSeconds(waitTime);
+		yield return new WaitForSeconds(_waitTime);
 		_target = waypoints[_waypointIndex];
 	}
 }

@@ -7,15 +7,16 @@ public class TrapButton : MonoBehaviour
 {
 	public GameObject trapDoor;
 	public GameObject movingPlatform;
+	public GameObject turret;
 	private MovingPlatform _movingPlatformScript;
 
 	void Awake()
 	{
-		//trapDoor = GameObject.FindGameObjectWithTag(AllTagsScript.trapDoorTag);
+		//trapDoor = GameObject.FindGameObjectWithTag(AllTagsConstants.trapDoorTag);
 		_movingPlatformScript = movingPlatform.GetComponent<MovingPlatform>();
 	}
 	
-	void OnCollisionEnter2D(Collision2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.transform.tag != null)
 		{
@@ -27,12 +28,16 @@ public class TrapButton : MonoBehaviour
 				//Play Trapdoor Audio.
 			}
 
-			if(movingPlatform != null)
+			else if(movingPlatform != null)
 			{
 				if(_movingPlatformScript != null)
 				{
 					StopCoroutine(_movingPlatformScript.Move());
 				}
+			}
+			else if(turret != null)
+			{
+				//Stop The Turret.
 			}
 
 			//Turn off the Trapdoor.
