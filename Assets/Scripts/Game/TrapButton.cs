@@ -16,7 +16,7 @@ public class TrapButton : MonoBehaviour
 		_movingPlatformScript = movingPlatform.GetComponent<MovingPlatform>();
 	}
 	
-	void OnCollisionEnter2D(Collision2D col)
+	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.transform.tag != null)
 		{

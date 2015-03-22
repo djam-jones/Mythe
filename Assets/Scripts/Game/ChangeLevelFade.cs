@@ -49,7 +49,7 @@ public class ChangeLevelFade : MonoBehaviour
         float fadeTime = BeginFade(1);
 		yield return new WaitForSeconds(fadeTime);
         
-        if (playerData.score > playerData.highscore)
+        if (playerData.score < playerData.highscore)
         {
             playerData.highscore = playerData.score;
             Debug.Log("Highscore! " + playerData.highscore);

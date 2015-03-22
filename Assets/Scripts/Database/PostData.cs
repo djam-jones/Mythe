@@ -12,7 +12,7 @@ public class PostData : MonoBehaviour
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag(AllTagsScript.playerData).GetComponent<PlayerData>();
     }
 
     public void Submit() 
@@ -58,7 +58,7 @@ public class PostData : MonoBehaviour
         }
 
         // Continue to the next level, even if you fail to connect to database
-        Application.LoadLevel("PrototypeLvl01");
+        Application.LoadLevel(Application.loadedLevel +1);
     }
 
     // For the UI to set

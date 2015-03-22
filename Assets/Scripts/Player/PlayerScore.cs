@@ -13,8 +13,8 @@ public class PlayerScore : MonoBehaviour
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag("PlayerData").GetComponent<PlayerData>();
-        scoreTxt.text = "Score: " + playerData.score;
+        playerData = GameObject.FindGameObjectWithTag(AllTagsScript.playerData).GetComponent<PlayerData>();
+        scoreTxt.text = "Time: " + playerData.score;
     }
 
     void Update() 
@@ -22,7 +22,7 @@ public class PlayerScore : MonoBehaviour
         if (counting) 
         {
             playerData.score = Mathf.RoundToInt(Time.timeSinceLevelLoad);
-            scoreTxt.text = "Score: " + playerData.score;
+            scoreTxt.text = "Time: " + playerData.score;
         }
     }
 }
