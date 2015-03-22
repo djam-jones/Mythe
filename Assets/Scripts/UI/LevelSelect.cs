@@ -5,41 +5,42 @@ using System.Collections;
 public class LevelSelect : MonoBehaviour 
 {
 	[SerializeField]
-	private GameObject _Button1;
+	private GameObject[] _allButtons;
 	[SerializeField]
-	private GameObject _Button2;
+	private GameObject _page1;
 	[SerializeField]
-	private GameObject _Button3;
-	[SerializeField]
-	private GameObject _Button4;
+	private GameObject _page2;
 	[SerializeField]
 	private GameObject _lArrow;
 	[SerializeField]
 	private GameObject _rArrow;
 	private int _currentPage = 1;
-
+	private PlayerData _playerData;
+	
 	void Awake ()
 	{
-		//GameObject.FindGameObjectWithTag().GetComponent<PlayerData>();
+		_playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
+		UpdatePage();
 	}
 
 	private void UpdatePage()
 	{
+		for(int i = 0; i < _playerData.unlockedLevels; i++)
+		{
+			_allButtons[i].SetActive(true);
+			Debug.Log("unlocking!");
+		}
 		if(_currentPage == 1)
 		{
-			_Button1.SetActive(true);
-			_Button2.SetActive(true);
-			_Button3.SetActive(false);
-			_Button4.SetActive(false);
+			_page1.SetActive(true);
+			_page2.SetActive(false);
 			_lArrow.SetActive(false);
 			_rArrow.SetActive(true);
 		}
 		else if(_currentPage == 2)
 		{
-			_Button1.SetActive(false);
-			_Button2.SetActive(false);
-			_Button3.SetActive(true);
-			_Button4.SetActive(true);
+			_page1.SetActive(false);
+			_page2.SetActive(true);
 			_lArrow.SetActive(true);
 			_rArrow.SetActive(false);
 		}

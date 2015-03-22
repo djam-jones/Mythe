@@ -28,7 +28,7 @@ public class ObjectManipulation : MonoBehaviour
 		{
 			RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 			{
-				if(hit.collider.tag == AllTagsScript.objectTag && _mousePos.x - hit.collider.transform.position.x <= 1.5 && _mousePos.y - hit.collider.transform.position.y <= 1.5)
+				if(hit.collider.tag == AllTagsConstants.objectTag && _mousePos.x - hit.collider.transform.position.x <= 1.5 && _mousePos.y - hit.collider.transform.position.y <= 1.5)
 				{
 					hit.collider.transform.position = _mousePos;
 					_recharge = false;
