@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D other)
 	{
-		if(other.transform.tag == AllTagsScript.platformTag)
+		if(other.transform.tag == AllTagsConstants.platformTag)
 		{
 			transform.SetParent(other.transform);
 		}
@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
 
 	void OnCollisionExit2D(Collision2D other)
 	{
-		if(other.transform.tag == AllTagsScript.platformTag)
+		if(other.transform.tag == AllTagsConstants.platformTag)
 		{
 			transform.SetParent(null);
 		}

@@ -12,7 +12,7 @@ public class TrapButton : MonoBehaviour
 
 	void Awake()
 	{
-		//trapDoor = GameObject.FindGameObjectWithTag(AllTagsScript.trapDoorTag);
+		//trapDoor = GameObject.FindGameObjectWithTag(AllTagsConstants.trapDoorTag);
 		_movingPlatformScript = movingPlatform.GetComponent<MovingPlatform>();
 	}
 	

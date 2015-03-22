@@ -4,7 +4,7 @@ using System.Collections;
 //Djamali
 
 //This script contains all the tags in the game
-public class AllTagsScript : MonoBehaviour 
+public class AllTagsConstants : MonoBehaviour 
 {
 	public const string gameManagerTag	= "GameManager";
 	public const string playerTag		= "Player";

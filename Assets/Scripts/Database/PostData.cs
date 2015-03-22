@@ -12,7 +12,7 @@ public class PostData : MonoBehaviour
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag(AllTagsScript.playerData).GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
     }
 
     public void Submit() 

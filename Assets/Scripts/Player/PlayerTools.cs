@@ -15,7 +15,7 @@ public class PlayerTools : MonoBehaviour
 
     void Start()
     {
-        _cameraFocus = GameObject.FindGameObjectWithTag(AllTagsScript.MainCamera).GetComponent<CameraFocus>();
+        _cameraFocus = GameObject.FindGameObjectWithTag(AllTagsConstants.MainCamera).GetComponent<CameraFocus>();
         _cameraFocus.target = defaultTarget;
         _playerMovement = defaultTarget.GetComponentInChildren<PlayerMovement>();
     }

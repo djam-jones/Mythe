@@ -13,7 +13,7 @@ public class PlayerScore : MonoBehaviour
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag(AllTagsScript.playerData).GetComponent<PlayerData>();
+        playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
         scoreTxt.text = "Time: " + playerData.score;
     }
 
