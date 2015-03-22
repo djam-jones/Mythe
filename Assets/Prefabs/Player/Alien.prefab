@@ -12,7 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11434850}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Alien
@@ -27,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.9619999, y: -4.25, z: 0}
-  m_LocalScale: {x: .300000012, y: .300000012, z: 1}
+  m_LocalPosition: {x: -80.8899994, y: -.230000004, z: 0}
+  m_LocalScale: {x: .438850045, y: .0714285821, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,26 +57,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -.439999998}
+  m_Offset: {x: 0, y: -1.14999998}
   serializedVersion: 2
-  m_Size: {x: 1.5, y: 3.1400001}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac14dd24e86c82646b5512f91aa9ca0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pointBar: {fileID: 0}
-  decrease: 10
-  increase: 5
-  points: 100
-  dragging: 0
-  recharging: 0
+  m_Size: {x: 2, y: 1.5}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +73,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveByKeyboard: 1
   moveByJoystick: 1
+--- !u!114 &11434850
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d471919e9c83644aaca7625498d89e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
+  _pointBar: {fileID: 0}
+  _decrease: 10
+  _increase: 5
+  _points: 100
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
