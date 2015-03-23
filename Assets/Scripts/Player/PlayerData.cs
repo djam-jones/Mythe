@@ -9,7 +9,7 @@ public class PlayerData : MonoBehaviour
 
     private int _highscore;
     private int _score = 0;
-	private int _unlockedLevels = 4;
+	private int _unlockedLevels = 1;
     
     void Awake() 
     {
