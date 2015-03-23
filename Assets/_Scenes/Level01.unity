@@ -388,11 +388,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.9454403
+      value: 10.71
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -.217857957
+      value: -.219999999
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
       propertyPath: m_LocalPosition.z
@@ -418,9 +418,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
-      propertyPath: _manipulationPoints
-      value: 
+    - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .816996336
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .816996455
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .816996455
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 207751f2ff16044359922251eb04b944, type: 2}
@@ -1015,7 +1023,6 @@ GameObject:
   - 23: {fileID: 690246726}
   - 61: {fileID: 690246731}
   - 50: {fileID: 690246727}
-  - 114: {fileID: 690246730}
   m_Layer: 0
   m_Name: End Level
   m_TagString: Untagged
@@ -1081,19 +1088,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
---- !u!114 &690246730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 690246725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e6e65b0967b4419cb4788b859b6ca44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadeOutTexture: {fileID: 2800000, guid: 4cbd09bcbd0a44882a4ef2ed4728ba39, type: 3}
-  fadeSpeed: .800000012
 --- !u!61 &690246731
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1146,12 +1140,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: a179f11bba76f49bfacd82d1d4abbaeb, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.18999851
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a179f11bba76f49bfacd82d1d4abbaeb, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &767986865
@@ -1318,6 +1307,12 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: e2251feb395733a4587d0b0cee71cdf8, type: 2}
   m_PrefabInternal: {fileID: 811165441}
+--- !u!114 &811165443
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11400000, guid: e2251feb395733a4587d0b0cee71cdf8,
+    type: 2}
+  m_PrefabInternal: {fileID: 811165441}
+  m_Script: {fileID: 11500000, guid: e419e617d0f6257499f328bca393ba1c, type: 3}
 --- !u!1 &851499135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1758,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: a179f11bba76f49bfacd82d1d4abbaeb, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1242769289
@@ -2259,7 +2255,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: 207751f2ff16044359922251eb04b944, type: 2}
+    - target: {fileID: 0}
       propertyPath: _manipulationPoints
       value: 
       objectReference: {fileID: 0}
@@ -2271,7 +2267,8 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .75
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 207751f2ff16044359922251eb04b944, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1928877216
@@ -2363,11 +2360,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22471570, guid: 27dc15317433ef545b1d2f72fcd35907, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22471570, guid: 27dc15317433ef545b1d2f72fcd35907, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400028, guid: 27dc15317433ef545b1d2f72fcd35907, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 811165443}
+    - target: {fileID: 11400028, guid: 27dc15317433ef545b1d2f72fcd35907, type: 2}
+      propertyPath: delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Jump
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 27dc15317433ef545b1d2f72fcd35907, type: 2}

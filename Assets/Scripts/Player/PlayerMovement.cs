@@ -65,7 +65,9 @@ public class PlayerMovement : MonoBehaviour
 
         transform.GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpSpeed * _jumpForce);
     }
-    
+
+    // Collision
+
     private void OnCollisionEnter2D(Collision2D hit) 
     {
 		if (hit.transform.tag == AllTagsConstants.groundTag) {

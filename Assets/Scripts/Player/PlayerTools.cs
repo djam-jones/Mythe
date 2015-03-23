@@ -36,6 +36,32 @@ public class PlayerTools : MonoBehaviour
         objectManipulation.enabled = !objectManipulation.enabled;
     }
 
+    // Tube system
+    public void ThroughTube(GameObject target, bool isInTube, Transform destination) 
+    {
+        SpriteRenderer  _spriteRenderer;
+        BoxCollider2D   _boxCollider;
+        Rigidbody2D     _rigidBody;
+
+        _spriteRenderer = target.GetComponentInChildren<SpriteRenderer>();
+        _boxCollider    = target.GetComponentInChildren<BoxCollider2D>();
+        _rigidBody      = target.GetComponentInChildren<Rigidbody2D>();
+
+        if (isInTube) 
+        {
+            _spriteRenderer.enabled = false;
+            _boxCollider.enabled    = false;
+            _rigidBody.isKinematic  = true;
+            target.transform.position = destination.position;
+        } 
+        else 
+        {
+            _spriteRenderer.enabled = true;
+            _boxCollider.enabled    = true;
+            _rigidBody.isKinematic  = false;
+        }
+    }
+
     // Toggle Camera's focus between players
     public void TogglePlayerFocus(GameObject target) 
     {
