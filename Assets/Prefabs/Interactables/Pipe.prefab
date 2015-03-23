@@ -171,7 +171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _duration: 1
   _destination: {fileID: 0}
-  _alien: {fileID: 0}
 --- !u!114 &11450184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,7 +184,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _duration: 1
   _destination: {fileID: 0}
-  _alien: {fileID: 0}
 --- !u!212 &21250496
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -210,7 +208,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 488098f1803b67243a2c05f44d646ee5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94c79932317e9584e8c75f25f7cad2ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21259004
 SpriteRenderer:
@@ -236,7 +234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5696eab75c68b7641992f9086d466ea4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af7aa415fdcf4c64298d2f3f87cb0e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21289434
 SpriteRenderer:
@@ -262,7 +260,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f57e6899c64d27e4994dae3d8ec2eafb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 94c79932317e9584e8c75f25f7cad2ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

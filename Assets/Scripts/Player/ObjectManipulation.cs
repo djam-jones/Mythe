@@ -12,10 +12,15 @@ public class ObjectManipulation : MonoBehaviour
 	[SerializeField]private float _increase;
 	[SerializeField]private float _points;
 	private bool _recharge;
-	[SerializeField]private Transform _dragObject;
+	private Transform _dragObject;
+    private Vector3 _dragOffset;
+    private Vector3 _clickOffset;
+    private Vector3 _mouseClickPos;
+    private Vector2 _offset;
 
 	void Update () 
 	{
+        if (!isActiveAndEnabled) return;
 
 		_mousePos = _camera.ScreenToWorldPoint (Input.mousePosition);	
 		_mousePos.z = 0;
@@ -24,10 +29,16 @@ public class ObjectManipulation : MonoBehaviour
 		{
 			RaycastHit2D hit = Physics2D.Raycast (Camera.main.ScreenToWorldPoint (Input.mousePosition), Vector2.zero);
 			{
-				if (hit.collider.tag == AllTagsConstants.objectTag && _mousePos.x - hit.collider.transform.position.x <= 1.5 && _mousePos.y - hit.collider.transform.position.y <= 1.5) 
+				if (hit.collider != null && hit.collider.tag == AllTagsConstants.objectTag && _mousePos.x - hit.collider.transform.position.x <= 1.5 && _mousePos.y - hit.collider.transform.position.y <= 1.5) 
 				{
 					_dragObject = hit.collider.transform;
-					_recharge = false;
+                    _recharge = false;
+
+                    _dragOffset = _dragObject.position - _mousePos;
+                    _offset = _mousePos - _dragObject.position;
+                    Debug.Log("dragOffset: " + _dragOffset);
+                    _mouseClickPos = _mousePos;
+					
 				}
 			}
 		} 
@@ -41,10 +52,29 @@ public class ObjectManipulation : MonoBehaviour
 			_dragObject = null;
 		}
 
+        // Drag
 		if (!_recharge && _dragObject != null) 
 		{
-			_dragObject.position = _mousePos;
-			_points -= Time.deltaTime * _decrease;
+
+            Rigidbody2D dragObjRB = _dragObject.GetComponent<Rigidbody2D>();
+            if (Vector2.Distance(_mousePos,_dragObject.position) < .5) {
+                Debug.Log("Smaller than 1");
+                dragObjRB.velocity = Vector2.zero;
+                _offset = new Vector2(.75f, .75f);
+            } else {
+                _offset = _mousePos - _dragObject.position;
+            }
+
+            dragObjRB.velocity += _offset;            
+            
+            //_clickOffset = _mousePos - _mouseClickPos;
+            //Debug.Log(_clickOffset);
+            //offset = _clickOffset - _dragObject.position;
+            //dragObjRB.MovePosition(dragObjRB.position + (Vector2)_clickOffset * Time.deltaTime);
+            //dragObjRB.AddForce(offset);// _dragOffset);
+            //_dragObject.transform.position = Vector3.Lerp(_dragObject.transform.position, _mousePos, Time.smoothDeltaTime * 10);
+            
+			//_points -= Time.deltaTime * _decrease;
 			_pointBar.size = _points / 100;
 		}
 		else if(_recharge && _points < 100)

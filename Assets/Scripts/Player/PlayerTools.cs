@@ -59,6 +59,7 @@ public class PlayerTools : MonoBehaviour
             _spriteRenderer.enabled = true;
             _boxCollider.enabled    = true;
             _rigidBody.isKinematic  = false;
+            target.transform.position = destination.position;
         }
     }
 

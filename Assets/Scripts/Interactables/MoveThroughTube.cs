@@ -6,7 +6,6 @@ public class MoveThroughTube : MonoBehaviour
 {
 	[SerializeField] private uint _duration = 1;
     [SerializeField] private Transform _destination;
- //   [SerializeField] private GameObject _alien;
     private PlayerTools _playerTools;
 
     void Start()
