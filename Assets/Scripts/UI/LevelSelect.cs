@@ -5,49 +5,43 @@ using System.Collections;
 public class LevelSelect : MonoBehaviour 
 {
 	[SerializeField]
-	private GameObject _levelButton1;
+	private GameObject[] _allButtons;
 	[SerializeField]
-	private GameObject _levelButton2;
+	private GameObject _page1;
 	[SerializeField]
-	private GameObject _levelButton3;
-	[SerializeField]
-	private GameObject _levelButton4;
-	[SerializeField]
-	private GameObject _levelButton5;
+	private GameObject _page2;
 	[SerializeField]
 	private GameObject _lArrow;
 	[SerializeField]
 	private GameObject _rArrow;
 	private int _currentPage = 1;
+	private PlayerData _playerData;
+	
+	void Awake ()
+	{
+		_playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
+		UpdatePage();
+	}
 
 	private void UpdatePage()
 	{
+		for(int i = 0; i < _playerData.unlockedLevels; i++)
+		{
+			_allButtons[i].SetActive(true);
+			Debug.Log("unlocking!");
+		}
 		if(_currentPage == 1)
 		{
-			_levelButton1.SetActive(true);
-			_levelButton2.SetActive(true);
-			_levelButton3.SetActive(false);
-			_levelButton4.SetActive(false);
-			_levelButton5.SetActive(false);
+			_page1.SetActive(true);
+			_page2.SetActive(false);
 			_lArrow.SetActive(false);
+			_rArrow.SetActive(true);
 		}
 		else if(_currentPage == 2)
 		{
-			_levelButton1.SetActive(false);
-			_levelButton2.SetActive(false);
-			_levelButton3.SetActive(true);
-			_levelButton4.SetActive(true);
-			_levelButton5.SetActive(false);
+			_page1.SetActive(false);
+			_page2.SetActive(true);
 			_lArrow.SetActive(true);
-			_rArrow.SetActive(true);
-		}
-		else if(_currentPage == 3)
-		{
-			_levelButton1.SetActive(false);
-			_levelButton2.SetActive(false);
-			_levelButton3.SetActive(false);
-			_levelButton4.SetActive(false);
-			_levelButton5.SetActive(true);
 			_rArrow.SetActive(false);
 		}
 	}
@@ -82,10 +76,5 @@ public class LevelSelect : MonoBehaviour
 	public void LoadLevel4 ()
 	{
 		Application.LoadLevel ("Level04");
-	}
-
-	public void LoadLevel5 ()
-	{
-		Application.LoadLevel ("Level05");
 	}
 }

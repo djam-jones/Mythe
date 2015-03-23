@@ -3,7 +3,7 @@ using System.Collections;
 
     // Boy Voesten
     // This script basically splits the calls to either currentTarget or the oldTarget, which is calculated by the switchPlayer script
-    // Todo: Improve this code (Quickly written for prototype)
+    // Todo: Improve this code
 
 public class PlayerTools : MonoBehaviour 
 {
@@ -11,10 +11,12 @@ public class PlayerTools : MonoBehaviour
     public GameObject defaultTarget;
     private GameObject _currentTarget;
     private PlayerMovement _playerMovement;
+    private CameraFocus _cameraFocus;
 
     void Start()
     {
-        CameraFocus.target = defaultTarget;
+        _cameraFocus = GameObject.FindGameObjectWithTag(AllTagsConstants.MainCamera).GetComponent<CameraFocus>();
+        _cameraFocus.target = defaultTarget;
         _playerMovement = defaultTarget.GetComponentInChildren<PlayerMovement>();
     }
     
@@ -28,17 +30,17 @@ public class PlayerTools : MonoBehaviour
     // Toggle ItemManipulation
     public void ToggleItemManip(GameObject target) 
     {
-        if (!target.GetComponentInChildren<ManipulationPoints>()) return;
-        ManipulationPoints manipulationPoints;
-        manipulationPoints = target.GetComponentInChildren<ManipulationPoints>();
-        manipulationPoints.enabled = !manipulationPoints.enabled;
+        if (!target.GetComponentInChildren<ObjectManipulation>()) return;
+        ObjectManipulation objectManipulation;
+        objectManipulation = target.GetComponentInChildren<ObjectManipulation>();
+        objectManipulation.enabled = !objectManipulation.enabled;
     }
 
     // Toggle Camera's focus between players
     public void TogglePlayerFocus(GameObject target) 
     {
         _currentTarget = target;
-        CameraFocus.target = _currentTarget;
+        _cameraFocus.target = _currentTarget;
     }
 
     // Update Player's PlayerMovement

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 //Djamali
 
@@ -8,36 +9,53 @@ public class Turret : MonoBehaviour
 	private GameObject _target;
 	private bool _humanSpotted;
 
+	private List<GameObject> _lineOfSight = new List<GameObject>();
+
 	void Awake()
 	{
-		_target = GameObject.FindGameObjectWithTag(AllTagsScript.humanTag);
+		_target = GameObject.FindGameObjectWithTag(AllTagsConstants.humanTag);
 	}
 
 	void Update()
 	{
-		StartCoroutine("RotateGun", false);
+		StartCoroutine(RotateGun());
+		SpotObject(false);
 	}
 
-	IEnumerator RotateGun(bool inSight)
+	void SpotObject(bool inSight)
 	{
 		inSight = _humanSpotted;
-
+		
 		float distance = Vector2.Distance(_target.transform.position, transform.position);
-
-		if(distance < 2 && inSight)
+		
+		if(inSight)
 		{
 			Debug.Log("hey " + inSight);
 		}
+	}
 
-		yield return inSight;
+	IEnumerator RotateGun()
+	{
+
+
+		yield return null;
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
-		if(other.transform.tag == AllTagsScript.humanTag || other.transform.tag == AllTagsScript.alienTag)
+		if(other.transform.tag != null)
 		{
-			_humanSpotted = true;
+			//Add GameObject to the sight List
+			_lineOfSight.Add(other.gameObject);
 		}
 	}
 
+	void OnTriggerExit2D(Collider2D other)
+	{
+		if(other.transform.tag != null)
+		{
+			//Remove GameObject from the sight List
+			_lineOfSight.Remove(other.gameObject);
+		}
+	}
 }

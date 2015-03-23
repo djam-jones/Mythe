@@ -10,7 +10,7 @@ public class Bomb : MonoBehaviour
 
 	void OnCollisionEnter2D(Collision2D hit)
 	{
-		if(hit.relativeVelocity.magnitude >= 7.5f && hit.transform.tag == AllTagsScript.guardTag)
+		if(hit.relativeVelocity.magnitude >= 7.5f && hit.transform.tag == AllTagsConstants.guardTag)
 		{
 			Debug.Log("Explode");
 
