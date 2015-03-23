@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 7c8a71b0df9c6854eaeace8ce1d8ddd4
+timeCreated: 1427152378
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PowerIdle_0
+    21300002: PowerIdle_1
+    21300004: PowerIdle_2
+    21300006: PowerIdle_3
+    21300008: PowerIdle_4
+    21300010: PowerIdle_5
+    21300012: PowerIdle_6
+    21300014: PowerIdle_7
+    21300016: PowerIdle_8
+    21300018: PowerIdle_9
+    21300020: PowerIdle_10
+    21300022: PowerIdle_11
+    21300024: PowerIdle_12
+    21300026: PowerIdle_13
+    21300028: PowerIdle_14
+    21300030: PowerIdle_15
+    21300032: PowerIdle_16
+    21300034: PowerIdle_17
+    21300036: PowerIdle_18
+    21300038: PowerIdle_19
+    21300040: PowerIdle_20
+    21300042: PowerIdle_21
+    21300044: PowerIdle_22
+    21300046: PowerIdle_23
+    21300048: PowerIdle_24
+    21300050: PowerIdle_25
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PowerIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 899
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 899
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_2
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 899
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_3
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 899
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 774
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_6
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 774
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_7
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 774
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 774
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_10
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 649
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 649
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 649
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 649
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 524
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 524
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_16
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 524
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_17
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 524
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_18
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 524
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_20
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 399
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_21
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 399
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_22
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 399
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_23
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 399
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 274
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerIdle_25
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 274
+        width: 102
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

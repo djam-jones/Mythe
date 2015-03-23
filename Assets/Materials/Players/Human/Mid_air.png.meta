@@ -1,0 +1,605 @@
+fileFormatVersion: 2
+guid: ede68ca506bb4644180a7e3f72562f22
+timeCreated: 1427148988
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Mid_air_0
+    21300002: Mid_air_1
+    21300004: Mid_air_2
+    21300006: Mid_air_3
+    21300008: Mid_air_4
+    21300010: Mid_air_5
+    21300012: Mid_air_6
+    21300014: Mid_air_7
+    21300016: Mid_air_8
+    21300018: Mid_air_9
+    21300020: Mid_air_10
+    21300022: Mid_air_11
+    21300024: Mid_air_12
+    21300026: Mid_air_13
+    21300028: Mid_air_14
+    21300030: Mid_air_15
+    21300032: Mid_air_16
+    21300034: Mid_air_17
+    21300036: Mid_air_18
+    21300038: Mid_air_19
+    21300040: Mid_air_20
+    21300042: Mid_air_21
+    21300044: Mid_air_22
+    21300046: Mid_air_23
+    21300048: Mid_air_24
+    21300050: Mid_air_25
+    21300052: Mid_air_26
+    21300054: Mid_air_27
+    21300056: Mid_air_28
+    21300058: Mid_air_29
+    21300060: Mid_air_30
+    21300062: Mid_air_31
+    21300064: Mid_air_32
+    21300066: Mid_air_33
+    21300068: Mid_air_34
+    21300070: Mid_air_35
+    21300072: Mid_air_36
+    21300074: Mid_air_37
+    21300076: Mid_air_38
+    21300078: Mid_air_39
+    21300080: Mid_air_40
+    21300082: Mid_air_41
+    21300084: Mid_air_42
+    21300086: Mid_air_43
+    21300088: Mid_air_44
+    21300090: Mid_air_45
+    21300092: Mid_air_46
+    21300094: Mid_air_47
+    21300096: Mid_air_48
+    21300098: Mid_air_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Mid_air_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3734
+        width: 188
+        height: 348
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 3734
+        width: 184
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_2
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 3734
+        width: 181
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_3
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 3734
+        width: 178
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_4
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 3734
+        width: 176
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3361
+        width: 173
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3363
+        width: 172
+        height: 346
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_7
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 3364
+        width: 168
+        height: 345
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_8
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 3365
+        width: 165
+        height: 345
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_9
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 3366
+        width: 163
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2995
+        width: 157
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_11
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 2996
+        width: 156
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_12
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2996
+        width: 154
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_13
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 2996
+        width: 153
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_14
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2998
+        width: 151
+        height: 339
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_15
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2632
+        width: 151
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_16
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2631
+        width: 154
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_17
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 2630
+        width: 156
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_18
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 2631
+        width: 160
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_19
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 2631
+        width: 163
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 2264
+        width: 167
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2265
+        width: 171
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 2266
+        width: 172
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_23
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2266
+        width: 173
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_24
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 2266
+        width: 173
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_25
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1901
+        width: 173
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_26
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1900
+        width: 174
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_27
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1901
+        width: 174
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_28
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 1900
+        width: 174
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_29
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 1901
+        width: 176
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_30
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1536
+        width: 176
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_31
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1535
+        width: 177
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_32
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 1535
+        width: 176
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_33
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 1535
+        width: 177
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_34
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1535
+        width: 178
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_35
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1168
+        width: 179
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_36
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1169
+        width: 178
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_37
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 1169
+        width: 180
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_38
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1169
+        width: 179
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_39
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 803
+        width: 180
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_40
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 802
+        width: 181
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_41
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 803
+        width: 181
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_42
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 802
+        width: 182
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_43
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 436
+        width: 182
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_44
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 436
+        width: 182
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_45
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 436
+        width: 183
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_46
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 436
+        width: 183
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_47
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 70
+        width: 184
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_48
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 68
+        width: 185
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mid_air_49
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 71
+        width: 185
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

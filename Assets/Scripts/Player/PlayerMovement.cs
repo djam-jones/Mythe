@@ -6,28 +6,23 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour 
 {
 
-    private bool _isJumping;
-    private float _jumpSpeed = 2f;
-    private uint _jumpForce = 450;
     private Rigidbody2D _body;
-    private float _movementSpeed = 3f;
-    private float _offsetX;
-
+    private GameObject _respawnPoint;
+    private Animator _anim;
+    private bool    _isJumping;
+    private float   _jumpSpeed      = 4f;
+    private uint    _jumpForce      = 450;
+    private float   _movementSpeed  = 4f;
+    private float   _offsetX;
+    private bool    _facingLeft     = false;
+    
     public bool moveByKeyboard;
     public bool moveByJoystick;
-	private GameObject _respawnPoint;
-
-    public float offsetX 
-    {
-        set 
-        {
-            _offsetX = value;
-        }
-    }
 
     void Awake() 
     {
         _body = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
 		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsConstants.respawnTag);
     }
 
@@ -54,8 +49,41 @@ public class PlayerMovement : MonoBehaviour
             velocity = _body.velocity;
             velocity.x = _offsetX * _movementSpeed;
             _body.velocity = velocity;
+
+            // Animations & Flipping
+            if (_body.velocity.x < 0) 
+            {
+                if (!_facingLeft) 
+                { 
+                    Flip();
+                }
+                _anim.Play("Run");
+            }
+            else if (_body.velocity.x > 0) 
+            {
+                if (_facingLeft) 
+                {
+                    Flip();
+                }
+                _anim.Play("Run");
+            } 
+            else if (!_isJumping) 
+            {
+                _anim.Play("Idle");
+            }
+            
         }
-        
+    }
+
+    // Flip object by inverting it's scale X
+    private void Flip() 
+    {
+        _facingLeft = !_facingLeft;
+
+        Vector3 objScale;
+        objScale = transform.localScale;
+        objScale.x *= -1;
+        transform.localScale = objScale;
     }
 
     public void Jump() 
@@ -63,15 +91,28 @@ public class PlayerMovement : MonoBehaviour
         if (_isJumping) return;
         _isJumping = true;
 
+        _anim.Play("Jump");
         transform.GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpSpeed * _jumpForce);
     }
 
-    // Collision
+    private void Landed() 
+    {
+        _isJumping = false;
+    }
+
+    // Collisions
 
     private void OnCollisionEnter2D(Collision2D hit) 
     {
-		if (hit.transform.tag == AllTagsConstants.groundTag) {
-            _isJumping = false;
+        if (hit.transform.tag == AllTagsConstants.groundTag || hit.transform.tag == AllTagsConstants.objectTag) 
+        {
+            if (_isJumping) 
+            {
+                _anim.Play("Land");
+                Invoke("Landed", 1);
+            } else {
+                _isJumping = false;
+            }
         }
 
 		if(hit.transform.tag == AllTagsConstants.platformTag)
@@ -93,5 +134,14 @@ public class PlayerMovement : MonoBehaviour
 			transform.SetParent(null);
 		}
 	}
+
+
+    // Getters & Setters
+
+    public float offsetX {
+        set {
+            _offsetX = value;
+        }
+    }
 
 }

@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 9186d8fdf6f47a34989edfa8848d1f00
+timeCreated: 1427152455
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PowerStart_0
+    21300002: PowerStart_1
+    21300004: PowerStart_2
+    21300006: PowerStart_3
+    21300008: PowerStart_4
+    21300010: PowerStart_5
+    21300012: PowerStart_6
+    21300014: PowerStart_7
+    21300016: PowerStart_8
+    21300018: PowerStart_9
+    21300020: PowerStart_10
+    21300022: PowerStart_11
+    21300024: PowerStart_12
+    21300026: PowerStart_13
+    21300028: PowerStart_14
+    21300030: PowerStart_15
+    21300032: PowerStart_16
+    21300034: PowerStart_17
+    21300036: PowerStart_18
+    21300038: PowerStart_19
+    21300040: PowerStart_20
+    21300042: PowerStart_21
+    21300044: PowerStart_22
+    21300046: PowerStart_23
+    21300048: PowerStart_24
+    21300050: PowerStart_25
+    21300052: PowerStart_26
+    21300054: PowerStart_27
+    21300056: PowerStart_28
+    21300058: PowerStart_29
+    21300060: PowerStart_30
+    21300062: PowerStart_31
+    21300064: PowerStart_32
+    21300066: PowerStart_33
+    21300068: PowerStart_34
+    21300070: PowerStart_35
+    21300072: PowerStart_36
+    21300074: PowerStart_37
+    21300076: PowerStart_38
+    21300078: PowerStart_39
+    21300080: PowerStart_40
+    21300082: PowerStart_42
+    21300084: PowerStart_43
+    21300086: PowerStart_47
+    21300088: PowerStart_48
+    21300090: PowerStart_41
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PowerStart_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 962
+        width: 148
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 962
+        width: 141
+        height: 60
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 958
+        width: 135
+        height: 63
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_3
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 954
+        width: 128
+        height: 68
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_4
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 951
+        width: 122
+        height: 70
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_5
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 948
+        width: 118
+        height: 74
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_6
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 944
+        width: 112
+        height: 79
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 852
+        width: 106
+        height: 84
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_8
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 848
+        width: 103
+        height: 89
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_9
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 844
+        width: 98
+        height: 92
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_10
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 842
+        width: 99
+        height: 94
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 841
+        width: 98
+        height: 95
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_12
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 838
+        width: 97
+        height: 98
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_13
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 836
+        width: 96
+        height: 100
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_14
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 835
+        width: 95
+        height: 101
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_15
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 834
+        width: 96
+        height: 102
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 724
+        width: 96
+        height: 104
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_17
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 724
+        width: 93
+        height: 103
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_18
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 723
+        width: 94
+        height: 105
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_19
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 722
+        width: 92
+        height: 106
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_20
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 721
+        width: 92
+        height: 107
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_21
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 719
+        width: 91
+        height: 109
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_22
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 716
+        width: 90
+        height: 112
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_23
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 711
+        width: 88
+        height: 115
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_24
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 708
+        width: 87
+        height: 118
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 578
+        width: 85
+        height: 123
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 575
+        width: 84
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_27
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 573
+        width: 82
+        height: 127
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 570
+        width: 80
+        height: 129
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_29
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 569
+        width: 79
+        height: 131
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_30
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 565
+        width: 75
+        height: 135
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_31
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 563
+        width: 76
+        height: 137
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_32
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 564
+        width: 76
+        height: 136
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_33
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 567
+        width: 74
+        height: 133
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_34
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 570
+        width: 71
+        height: 130
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_35
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 572
+        width: 70
+        height: 127
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_36
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 573
+        width: 70
+        height: 126
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 429
+        width: 68
+        height: 125
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 430
+        width: 68
+        height: 124
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_39
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 424
+        width: 77
+        height: 130
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_40
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 422
+        width: 77
+        height: 131
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_42
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 429
+        width: 84
+        height: 127
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_43
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 434
+        width: 91
+        height: 123
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_47
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 427
+        width: 83
+        height: 127
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_48
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 416
+        width: 89
+        height: 137
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PowerStart_41
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 436
+        width: 88
+        height: 117
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
