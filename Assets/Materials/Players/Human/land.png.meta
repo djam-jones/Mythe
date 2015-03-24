@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: c733f8abe19a59947ab5149233e8e26d
+timeCreated: 1427149023
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: land_0
+    21300002: land_1
+    21300004: land_2
+    21300006: land_3
+    21300008: land_4
+    21300010: land_5
+    21300012: land_6
+    21300014: land_7
+    21300016: land_8
+    21300018: land_9
+    21300020: land_10
+    21300022: land_11
+    21300024: land_12
+    21300026: land_13
+    21300028: land_14
+    21300030: land_15
+    21300032: land_16
+    21300034: land_17
+    21300036: land_18
+    21300038: land_19
+    21300040: land_20
+    21300042: land_21
+    21300044: land_22
+    21300046: land_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: land_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1691
+        width: 185
+        height: 342
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_1
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1691
+        width: 178
+        height: 343
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_2
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1691
+        width: 170
+        height: 343
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_3
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1692
+        width: 160
+        height: 342
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_4
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1694
+        width: 167
+        height: 340
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1329
+        width: 176
+        height: 337
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 1334
+        width: 168
+        height: 333
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_7
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1339
+        width: 155
+        height: 329
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_8
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1344
+        width: 155
+        height: 323
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_9
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 1348
+        width: 155
+        height: 320
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_10
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 988
+        width: 156
+        height: 316
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 996
+        width: 157
+        height: 312
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_12
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 987
+        width: 157
+        height: 317
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_13
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 985
+        width: 155
+        height: 321
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_14
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 977
+        width: 155
+        height: 327
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 622
+        width: 154
+        height: 332
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_16
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 616
+        width: 153
+        height: 336
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_17
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 612
+        width: 153
+        height: 341
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_18
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 610
+        width: 153
+        height: 344
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_19
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 606
+        width: 152
+        height: 348
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_20
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 235
+        width: 152
+        height: 347
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 235
+        width: 152
+        height: 347
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_22
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 236
+        width: 151
+        height: 346
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: land_23
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 236
+        width: 151
+        height: 346
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

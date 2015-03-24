@@ -6,34 +6,28 @@ public class MoveThroughTube : MonoBehaviour
 {
 	[SerializeField] private uint _duration = 1;
     [SerializeField] private Transform _destination;
-    [SerializeField] private GameObject _alien;
-    private SpriteRenderer _alienSpriteR;
-    private BoxCollider2D _alienColl;
-    private Rigidbody2D _alienRB;
-    
+    private PlayerTools _playerTools;
+
+    void Start()
+    {
+        _playerTools = GameObject.FindGameObjectWithTag(AllTagsConstants.gameManagerTag).GetComponentInChildren<PlayerTools>();
+    }
 
 	void OnTriggerEnter2D (Collider2D Other)
 	{
-		if (Other.tag == _alien.gameObject.tag)
+		if (Other.tag == AllTagsConstants.alienTag)
 		{
-			StartCoroutine(GoThrough());
+			StartCoroutine(GoThrough(Other.gameObject));
 		}
 	}
 
-	IEnumerator GoThrough ()
+	IEnumerator GoThrough (GameObject alien)
 	{
-        _alienSpriteR = _alien.GetComponentInChildren<SpriteRenderer>();
-        _alienColl = _alien.GetComponentInChildren<BoxCollider2D>();
-        _alienRB = _alien.GetComponentInChildren<Rigidbody2D>();
-        _alienSpriteR.enabled = false;
-        _alienColl.enabled = false;
-        _alienRB.isKinematic = true;
-        _alien.transform.position = _destination.position;
+        _playerTools.ThroughTube(alien, true, _destination);
+
 		yield return new WaitForSeconds(_duration);
-        _alien.transform.position = _destination.position;
-        _alienSpriteR.enabled = true;
-        _alienColl.enabled = true;
-        _alienRB.isKinematic = false;
+
+        _playerTools.ThroughTube(alien, false, _destination);
     }
 
 }

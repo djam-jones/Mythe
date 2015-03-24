@@ -64,7 +64,7 @@ public class Joystick : MonoBehaviour
         }
 
         // This will prevent the values from going crazy when trying to return to it's original position
-        if (pivotToObj > 0.1f) 
+        if (pivotToObj > 0.01f) 
         {
             pivotToObj = ((Vector2)transform.position - _originalPos).magnitude;
             _offsetX = (transform.position.x - _originalPos.x) / _range;

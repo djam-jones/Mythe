@@ -4,16 +4,11 @@ using System.Collections;
 
 public class LevelSelect : MonoBehaviour 
 {
-	[SerializeField]
-	private GameObject[] _allButtons;
-	[SerializeField]
-	private GameObject _page1;
-	[SerializeField]
-	private GameObject _page2;
-	[SerializeField]
-	private GameObject _lArrow;
-	[SerializeField]
-	private GameObject _rArrow;
+	[SerializeField]private GameObject[] _allButtons;
+	[SerializeField]private GameObject _page1;
+	[SerializeField]private GameObject _page2;
+	[SerializeField]private GameObject _lArrow;
+	[SerializeField]private GameObject _rArrow;
 	private int _currentPage = 1;
 	private PlayerData _playerData;
 	

@@ -28,7 +28,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door_Close_Animation
+  m_Name: DoorClose
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -45,7 +45,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door_Open_Animation
+  m_Name: DoorOpen
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -62,7 +62,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Door_Idle_Animation
+  m_Name: DoorIdle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
