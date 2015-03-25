@@ -14,6 +14,7 @@ public class AllTagsConstants : MonoBehaviour
 	public const string trapTag			= "Trap";
 	public const string trapDoorTag 	= "Trapdoor";
 	public const string platformTag		= "MovingPlatform";
+	public const string turretTag		= "Turret";
 	public const string objectTag		= "Object";
 	public const string guardTag		= "Guard";
 	public const string joystickTag		= "Joystick";

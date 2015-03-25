@@ -46,7 +46,7 @@ public class GuardAI : MonoBehaviour
 
 	void SearchForPlayer()
 	{
-		float distance = Vector3.Distance(transform.position, _target.transform.position);
+		//float distance = Vector3.Distance(transform.position, _target.transform.position);
 
 		if(Vector2.Angle(transform.position, endOfSight.position) < 15f)
 		{

@@ -5,51 +5,38 @@ using System.Collections;
 
 public class TrapButton : MonoBehaviour 
 {
-	public GameObject trapDoor;
-	public GameObject movingPlatform;
-	public GameObject turret;
+	public GameObject trap;
 	private MovingPlatform _movingPlatformScript;
+	private Turret _turretScript;
+	private Trapdoor _trapDoorScript;
 
 	void Awake()
 	{
-		//trapDoor = GameObject.FindGameObjectWithTag(AllTagsConstants.trapDoorTag);
-		_movingPlatformScript = movingPlatform.GetComponent<MovingPlatform>();
+		_movingPlatformScript = trap.GetComponent<MovingPlatform>();
+		_turretScript = trap.GetComponent<Turret>();
+		_trapDoorScript = trap.GetComponent<Trapdoor>();
+
 	}
 	
 	void OnTriggerEnter2D(Collider2D col)
 	{
 		if(col.transform.tag != null)
 		{
-			//Play The DoorOpen Animation and lock it.
-			if(trapDoor != null)
+			if(trap.tag == AllTagsConstants.trapDoorTag && _trapDoorScript != null)
 			{
-				//trapDoor.GetComponent<Trapdoor>().Open();
-				trapDoor.GetComponent<Animator>().SetTrigger("DoorOpen");
-				//Play Trapdoor Audio.
+				//Turn off Trap Door
+				Debug.Log("Trapdoor");
 			}
-
-			else if(movingPlatform != null)
+			else if(trap.tag == AllTagsConstants.platformTag && _movingPlatformScript != null)
 			{
-				if(_movingPlatformScript != null)
-				{
-					StopCoroutine(_movingPlatformScript.Move());
-				}
+				//Turn off Platform
+				Debug.Log("Platform");
 			}
-			else if(turret != null)
+			else if(trap.tag == AllTagsConstants.turretTag && _turretScript != null)
 			{
-				//Stop The Turret.
+				//Turn off Turret
+				Debug.Log("Turret");
 			}
-
-			//Turn off the Trapdoor.
-			StartCoroutine(DisableTrap());
 		}
 	}
-
-	IEnumerator DisableTrap()
-	{
-		yield return new WaitForSeconds(0.5f);
-		if(trapDoor != null)
-			trapDoor.SetActive(false);
-	}
-
 }
