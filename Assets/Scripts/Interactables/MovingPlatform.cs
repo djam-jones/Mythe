@@ -26,6 +26,11 @@ public class MovingPlatform : MonoBehaviour
 		StartCoroutine(Move());
 	}
 
+	public void StopMoving()
+	{
+		StopCoroutine(Move());
+	}
+
 	public IEnumerator Move()
 	{
 		//Move this Platform to one of the set target.

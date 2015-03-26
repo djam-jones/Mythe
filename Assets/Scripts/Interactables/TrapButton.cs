@@ -10,6 +10,8 @@ public class TrapButton : MonoBehaviour
 	private Turret _turretScript;
 	private Trapdoor _trapDoorScript;
 
+	private float _waitTime = 4f;
+
 	void Awake()
 	{
 		_movingPlatformScript = trap.GetComponent<MovingPlatform>();
@@ -20,21 +22,21 @@ public class TrapButton : MonoBehaviour
 	
 	void OnTriggerEnter2D(Collider2D col)
 	{
-		if(col.transform.tag != null)
+		if(col.transform.tag != null && col.tag != AllTagsConstants.groundTag)
 		{
 			if(trap.tag == AllTagsConstants.trapDoorTag && _trapDoorScript != null)
 			{
-				//Turn off Trap Door
+				_trapDoorScript.OpenDoor();
 				Debug.Log("Trapdoor");
 			}
 			else if(trap.tag == AllTagsConstants.platformTag && _movingPlatformScript != null)
 			{
-				//Turn off Platform
+				_movingPlatformScript.StopMoving();
 				Debug.Log("Platform");
 			}
 			else if(trap.tag == AllTagsConstants.turretTag && _turretScript != null)
 			{
-				//Turn off Turret
+				_turretScript.DisableGun(_waitTime);
 				Debug.Log("Turret");
 			}
 		}

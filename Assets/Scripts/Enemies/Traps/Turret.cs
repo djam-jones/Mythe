@@ -14,7 +14,27 @@ public class Turret : MonoBehaviour
 	private float _rotationSpeed = 0.125f;
 	
 	private List<GameObject> _lineOfSight = new List<GameObject>();
-	public GameObject gunBarrel;
+//
+//	/// <summary>
+//	/// The Array of Bullets to fire when the Shoot function stars.
+//	/// </summary>
+//	public GameObject bullet;
+
+	/// <summary>
+	/// The length of time it will take to destroy the bullet. After which the bullet will be reset and pooled if needed.
+	/// </summary>
+	public float bulletDestructionTime = 1f;
+
+	/// <summary>
+	/// The bullet's Speed.
+	/// </summary>
+	public float bulletSpeed = 25f;
+
+	/// <summary>
+	/// Should the bullet be added to the bullets pool after completion
+	/// </summary>
+	[HideInInspector]
+	public bool poolAfterComplete = true;
 
 	void Awake()
 	{
@@ -23,8 +43,14 @@ public class Turret : MonoBehaviour
 
 	void Update()
 	{
-		StartCoroutine(RotateGun());
+		StartCoroutine("RotateGun");
 		SpotObject(false);
+		
+		if(_humanSpotted)
+		{
+			StopCoroutine("RotateGun");
+			Shoot();
+		}
 	}
 
 	void SpotObject(bool inSight)
@@ -40,7 +66,6 @@ public class Turret : MonoBehaviour
 			{
 				dist = distance;
 				closestObject = objectInList;
-				//Debug.Log("Closest object: " + closestObject + "\n" + "Distance: " + distance);
 			}
 		}
 
@@ -48,13 +73,13 @@ public class Turret : MonoBehaviour
 		{
 			inSight = true;
 		}
+	}
 
-		if(inSight)
-		{
-			StopCoroutine(RotateGun());
-			//Debug.Log("hey I'm " + inSight + " and this guy's a bitch!");
-			Shoot();
-		}
+	public IEnumerator DisableGun(float _disableTime)
+	{
+		StopCoroutine("RotateGun");
+		yield return new WaitForSeconds(_disableTime);
+		StartCoroutine("RotateGun");
 	}
 
 	IEnumerator RotateGun()
@@ -62,12 +87,46 @@ public class Turret : MonoBehaviour
 		float t = Mathf.PingPong(Time.time * _rotationSpeed, 1);
 		transform.eulerAngles = Vector3.Lerp(_startRotation, _rotationAngle, t);
 
-		yield return null;
+		yield break;
 	}
 
-	void Shoot()
+	/// <summary>
+	/// Will Shoot the gun
+	/// </summary>
+	public virtual void Shoot()
 	{
-		Debug.Log ("Release the keks!");
+		ObjectPool.instance.GetObjectForType("BulletObject", false);
+		//bullet.transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime, Space.Self);
+
+//		foreach(GameObject bullet in bullets)
+//		{
+//			bullet.transform.Translate(Vector2.right * bulletSpeed * Time.deltaTime, Space.Self);
+//		}
+
+		StartCoroutine(WaitForCompletion());
+	}
+
+	/// <summary>
+	/// Will Reset the gun
+	/// </summary>
+	public virtual void ResetGun()
+	{
+		if(poolAfterComplete)
+		{
+//			ObjectPool.instance.PoolObject();
+		}
+		else
+		{
+			Destroy(gameObject);
+		}
+	}
+
+	public IEnumerator WaitForCompletion()
+	{
+		//Wait for the shooting to complete itself
+		yield return new WaitForSeconds(bulletDestructionTime);
+		//Reset the Shooting
+		ResetGun();
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
