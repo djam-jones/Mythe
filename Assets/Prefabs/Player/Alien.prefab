@@ -13,6 +13,7 @@ GameObject:
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11434850}
+  - 114: {fileID: 11486408}
   - 95: {fileID: 9575624}
   - 82: {fileID: 8242552}
   m_Layer: 0
@@ -29,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -83.0500031, y: -1.41700006, z: 0}
-  m_LocalScale: {x: 1, y: .200000003, z: 1}
+  m_LocalPosition: {x: -5.8499999, y: -.479000002, z: 0}
+  m_LocalScale: {x: .600000024, y: .25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -181,6 +182,20 @@ MonoBehaviour:
   _decrease: 10
   _increase: 5
   _points: 100
+  _audio: {fileID: 8242552}
+  _psyAudio: {fileID: 8300000, guid: 7f30a93c067dfa141b2f6a0103aa6ada, type: 3}
+--- !u!114 &11486408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9994bd850066f09469047c607419a3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

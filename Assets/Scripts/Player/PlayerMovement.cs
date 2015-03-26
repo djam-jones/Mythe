@@ -9,14 +9,13 @@ public class PlayerMovement : MonoBehaviour
 {
 
     private Rigidbody2D _body;
-    private GameObject _respawnPoint;
     private Animator _anim;
-    private bool    _isJumping;
-    private float   _jumpSpeed      = 4f;
-    [SerializeField] private uint    _jumpForce      = 450;
-    private float   _movementSpeed  = 4f;
-    private float   _offsetX;
-    private bool    _facingLeft     = false;
+    private float _movementSpeed = 4f;
+    private float _offsetX;
+    private bool _facingLeft = false;
+    private bool _isJumping;
+    private float _jumpSpeed = 4f;
+    [SerializeField] private uint _jumpForce = 450;
 	[SerializeField] private AudioClip[] _audioList;
 	[SerializeField] private AudioSource _audio;
     
@@ -27,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _body = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
-		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsConstants.respawnTag);
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("LayerHuman"), LayerMask.NameToLayer("LayerAlien"), true);
     }
 
@@ -38,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Movement() 
     {
-        // So that we can easilly turn it on and off in the inspector
+        // Dev cheat - Enables disgustingly quick movement for keyboard.
         if (moveByKeyboard) 
         {
             float x = Input.GetAxis("Horizontal") * 10 * Time.deltaTime;
@@ -47,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
             transform.Translate(new Vector2(x, y));
         }
 
+        // Movement by Joystick, this is the actual movement.
         if (moveByJoystick) 
         {
             Vector2 velocity;
@@ -82,8 +81,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 _anim.Play("Idle");
             }
-            
         }
+
     }
 
     // Flip object by inverting it's scale X
@@ -96,6 +95,9 @@ public class PlayerMovement : MonoBehaviour
         objScale.x *= -1;
         transform.localScale = objScale;
     }
+
+
+    // Jumping related
 
     public void Jump() 
     {
@@ -114,20 +116,28 @@ public class PlayerMovement : MonoBehaviour
         _isJumping = false;
     }
 
+
     // Collisions
 
     private void OnCollisionEnter2D(Collision2D hit) 
     {
-        if (hit.transform.tag == AllTagsConstants.groundTag || hit.transform.tag == AllTagsConstants.objectTag || hit.transform.tag == AllTagsConstants.alienTag || hit.transform.tag == AllTagsConstants.platformTag) 
+        if (hit.transform.tag == AllTagsConstants.groundTag 
+        || hit.transform.tag == AllTagsConstants.objectTag 
+        || hit.transform.tag == AllTagsConstants.alienTag 
+        || hit.transform.tag == AllTagsConstants.platformTag) 
         {
             if (_isJumping) 
             {
                 _anim.Play("Land");
 				_audio.clip = _audioList[2];
-				if(_audio.isPlaying == false)
-					_audio.Play();
+                if (_audio.isPlaying == false) 
+                {
+                    _audio.Play();
+                }
                 Invoke("Landed", .5f);
-            } else {
+            }
+            else 
+            {
                 _isJumping = false;
             }
         }
@@ -135,12 +145,6 @@ public class PlayerMovement : MonoBehaviour
 		if(hit.transform.tag == AllTagsConstants.platformTag)
 		{
 			transform.SetParent(hit.transform);
-		}
-
-		if(hit.transform.tag == AllTagsConstants.trapTag)
-		{
-			//Return to Respawn Point if you hit a trap
-			transform.position = _respawnPoint.transform.position;
 		}
     }
 	
@@ -155,8 +159,10 @@ public class PlayerMovement : MonoBehaviour
 
     // Getters & Setters
 
-    public float offsetX {
-        set {
+    public float offsetX 
+    {
+        set 
+        {
             _offsetX = value;
         }
     }

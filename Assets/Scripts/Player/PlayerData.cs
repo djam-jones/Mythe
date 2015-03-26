@@ -7,7 +7,6 @@ using System.Collections;
 public class PlayerData : MonoBehaviour 
 {
 
-    //private float _highscore = 999.9f;
     private float[] _highscores = new float[4];
     private int _score = 0;
 	private int _unlockedLevels = 1;
@@ -40,6 +39,10 @@ public class PlayerData : MonoBehaviour
             Debug.Log("New Highscore: " + _highscores[_currentLvl]);
         }
         SaveHighscore();
+
+        if (_currentLvl + 1 == _unlockedLevels) {
+            _unlockedLevels++;
+        }
     }
 
     public void SaveHighscore() 
@@ -87,20 +90,7 @@ public class PlayerData : MonoBehaviour
             _score = value;
         }
     }
-    /*
-    public float highscore 
-    {
-        get 
-        {
-            return _highscore;
-        }
-        set
-        {
-            _highscore = value;
 
-        }
-    }
-    */
 	public int unlockedLevels
 	{
 		get

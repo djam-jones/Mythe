@@ -46,9 +46,9 @@ public class Trapdoor : MonoBehaviour
 	public void OpenDoor()
 	{
 		//Vector2.Lerp(_doorPos, _openPos, _openingSpeed * Time.deltaTime);
-		isOpen = true;
+		//isOpen = true;
 		_doorAnimator.SetTrigger("OpenDoor");
-		_doorTrigger.enabled = false;
+		//_doorTrigger.enabled = false;
 
 		//Play Door Audio
 	}
@@ -56,7 +56,7 @@ public class Trapdoor : MonoBehaviour
 	public void CloseDoor()
 	{
 		//Vector2.Lerp(_doorPos, _closedPos, _openingSpeed * Time.deltaTime);
-		isOpen = false;
+		//isOpen = false;
 		_doorAnimator.SetTrigger("CloseDoor");
 
 		//Play Door Audio

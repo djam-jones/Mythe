@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6100000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11477566}
   - 95: {fileID: 9583354}
   - 82: {fileID: 8221508}
   m_Layer: 0
@@ -28,8 +29,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -81.6465836, y: -1.30928576, z: 0}
-  m_LocalScale: {x: .731416702, y: .119047627, z: 1}
+  m_LocalPosition: {x: -4.71400023, y: -.523000002, z: 0}
+  m_LocalScale: {x: .600000024, y: .200000003, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -158,9 +159,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e419e617d0f6257499f328bca393ba1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _jumpForce: 450
+  _jumpForce: 550
+  _audioList:
+  - {fileID: 8300000, guid: 55f528dc6d686954a91218333cac9384, type: 3}
+  - {fileID: 8300000, guid: 08600d0b8569130438561d84bae4783c, type: 3}
+  - {fileID: 8300000, guid: dc1b9d830fe91794e984e89ed4b3e2e2, type: 3}
+  _audio: {fileID: 8221508}
   moveByKeyboard: 1
   moveByJoystick: 1
+--- !u!114 &11477566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9994bd850066f09469047c607419a3f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _respawnPoint: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

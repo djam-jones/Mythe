@@ -64,4 +64,9 @@ public class LevelSelect : MonoBehaviour
 			UpdatePage();
 	}
 
+    public void SetLvl(int lvl) 
+    {
+        _playerData.currentLvl = lvl;
+    }
+
 }
