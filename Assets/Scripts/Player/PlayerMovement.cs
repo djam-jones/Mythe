@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+[RequireComponent(typeof(AudioSource))]
+
     // Boy Voesten
 
 public class PlayerMovement : MonoBehaviour 
@@ -15,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     private float   _movementSpeed  = 4f;
     private float   _offsetX;
     private bool    _facingLeft     = false;
+	[SerializeField] private AudioClip[] _audioList;
+	[SerializeField] private AudioSource _audio;
     
     public bool moveByKeyboard;
     public bool moveByJoystick;
@@ -57,7 +61,10 @@ public class PlayerMovement : MonoBehaviour
                 { 
                     Flip();
                 }
-                _anim.Play("Run");
+				_anim.Play("Run");
+				_audio.clip = _audioList[0];
+				if(_audio.isPlaying == false)
+					_audio.Play();
             }
             else if (_body.velocity.x > 0) 
             {
@@ -65,7 +72,10 @@ public class PlayerMovement : MonoBehaviour
                 {
                     Flip();
                 }
-                _anim.Play("Run");
+				_anim.Play("Run");
+				_audio.clip = _audioList[0];
+				if(_audio.isPlaying == false)
+					_audio.Play();
             } 
             else if (!_isJumping) 
             {
@@ -92,6 +102,9 @@ public class PlayerMovement : MonoBehaviour
         _isJumping = true;
 
         _anim.Play("Jump");
+		_audio.clip = _audioList[1];
+		if(_audio.isPlaying == false)
+			_audio.Play();
         transform.GetComponent<Rigidbody2D>().AddForce(Vector2.up * _jumpSpeed * _jumpForce);
     }
 
@@ -109,6 +122,9 @@ public class PlayerMovement : MonoBehaviour
             if (_isJumping) 
             {
                 _anim.Play("Land");
+				_audio.clip = _audioList[2];
+				if(_audio.isPlaying == false)
+					_audio.Play();
                 Invoke("Landed", .5f);
             } else {
                 _isJumping = false;
