@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator _anim;
     private bool    _isJumping;
     private float   _jumpSpeed      = 4f;
-    private uint    _jumpForce      = 450;
+    [SerializeField] private uint    _jumpForce      = 450;
     private float   _movementSpeed  = 4f;
     private float   _offsetX;
     private bool    _facingLeft     = false;
@@ -104,12 +104,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D hit) 
     {
-        if (hit.transform.tag == AllTagsConstants.groundTag || hit.transform.tag == AllTagsConstants.objectTag) 
+        if (hit.transform.tag == AllTagsConstants.groundTag || hit.transform.tag == AllTagsConstants.objectTag || hit.transform.tag == AllTagsConstants.alienTag || hit.transform.tag == AllTagsConstants.platformTag) 
         {
             if (_isJumping) 
             {
                 _anim.Play("Land");
-                Invoke("Landed", 1);
+                Invoke("Landed", .5f);
             } else {
                 _isJumping = false;
             }
