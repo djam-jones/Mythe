@@ -3,18 +3,19 @@ using System.Collections;
 
 public class LevelCheck : MonoBehaviour 
 {
-	public Texture fadeOutTexture;
+
+	private const string _LEVELSELECT = "LevelSelect";
+    
+    public Texture fadeOutTexture;
 	public float fadeSpeed = 0.8f;
-	
+
 	private int _drawDepth = -1000;
 	private float _alpha = 1f;
 	private int _fadeDir = -1;
-
 	private bool _humanIn;
 	private bool _alienIn;
-
     private PlayerData _playerData;
-    private const string _HIGHSCORE = "HighScore";
+    
 
     void Start() 
     {
@@ -25,38 +26,27 @@ public class LevelCheck : MonoBehaviour
 	{
 		if(other.transform.tag == AllTagsConstants.humanTag)
 		{
-			Debug.Log ("Human Is In!");
 			_humanIn = true;
 		}
 		if(other.transform.tag == AllTagsConstants.alienTag)
 		{
-			Debug.Log ("Alien Is In!");
 			_alienIn = true;
 		}
 
 		if(_humanIn && _alienIn)
 		{
 			Debug.Log("Change Level!");
-			StartCoroutine(ChangeLevel(Application.loadedLevel + 1));
+            _playerData.CheckScore();
+			StartCoroutine(ChangeLevel());
 		}
 	}
 
-	IEnumerator ChangeLevel(int lvlIndex)
+	IEnumerator ChangeLevel()
 	{
         float fadeTime = BeginFade(1);
 		yield return new WaitForSeconds(fadeTime);
         
-        if (_playerData.score < _playerData.highscore)
-        {
-            _playerData.highscore = _playerData.score;
-            Debug.Log("Highscore! " + _playerData.highscore);
-            Application.LoadLevel(_HIGHSCORE);
-        } 
-        else 
-        {
-            Debug.Log("No highscore...");
-            Application.LoadLevelAsync(lvlIndex);
-        }
+        Application.LoadLevelAsync(_LEVELSELECT);
 	}
 
 	void OnGUI()

@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
         _body = GetComponent<Rigidbody2D>();
         _anim = GetComponent<Animator>();
 		_respawnPoint = GameObject.FindGameObjectWithTag(AllTagsConstants.respawnTag);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("LayerHuman"), LayerMask.NameToLayer("LayerAlien"), true);
     }
 
     void Update() 

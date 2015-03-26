@@ -12,4 +12,8 @@ public class Tools : MonoBehaviour {
     {
         obj.SetActive(!obj.activeSelf);
     }
+
+    public void Quit() {
+        Application.Quit();
+    }
 }

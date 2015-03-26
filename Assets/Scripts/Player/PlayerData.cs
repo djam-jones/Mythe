@@ -7,13 +7,73 @@ using System.Collections;
 public class PlayerData : MonoBehaviour 
 {
 
-    private int _highscore;
+    //private float _highscore = 999.9f;
+    private float[] _highscores = new float[4];
     private int _score = 0;
 	private int _unlockedLevels = 1;
+    private int _currentLvl;
+    SaveLoadDataSerialized _saveLoadData;
+
+    private static bool spawned = false;
     
     void Awake() 
     {
-        DontDestroyOnLoad(this);
+        if (spawned == false) {
+            spawned = true;
+
+            DontDestroyOnLoad(transform.gameObject);
+
+        } else {
+            DestroyImmediate(gameObject); //This deletes the new objects that might be created
+        }
+
+        _saveLoadData = GameObject.FindGameObjectWithTag(AllTagsConstants.saveLoadData).GetComponent<SaveLoadDataSerialized>();
+    }
+
+    public void CheckScore() 
+    {
+        Debug.Log("CheckScore -> Trigger");
+
+        if (_score < _highscores[_currentLvl]) {
+            Debug.Log("Score < Highscore");
+            _highscores[_currentLvl] = _score;
+            Debug.Log("New Highscore: " + _highscores[_currentLvl]);
+        }
+        SaveHighscore();
+    }
+
+    public void SaveHighscore() 
+    {
+        _highscores[_currentLvl] = _score;
+        Debug.Log("SaveHighscore - " + _score + " - Into -> " + _highscores[_currentLvl]);
+        _saveLoadData.Save();
+    }
+
+    public float GetHighscore(int lvlNumber) 
+    {
+        return _highscores[lvlNumber];
+    }
+
+    void OnApplicationFocus(bool focus) 
+    {
+        if (!focus) 
+        {
+            _saveLoadData.Save();
+        }
+    }
+
+    // GETTERS & SETTERS
+
+    public float[] highscores 
+    {
+        get 
+        {
+            return _highscores;
+        }
+        set 
+        {
+            _highscores = value;
+        }
     }
 
     public int score
@@ -27,8 +87,8 @@ public class PlayerData : MonoBehaviour
             _score = value;
         }
     }
-
-    public int highscore 
+    /*
+    public float highscore 
     {
         get 
         {
@@ -37,9 +97,10 @@ public class PlayerData : MonoBehaviour
         set
         {
             _highscore = value;
+
         }
     }
-
+    */
 	public int unlockedLevels
 	{
 		get
@@ -51,4 +112,16 @@ public class PlayerData : MonoBehaviour
 			_unlockedLevels = value;
 		}
 	}
+
+    public int currentLvl 
+    {
+        get 
+        {
+            return _currentLvl;
+        }
+        set 
+        {
+            _currentLvl = value;
+        }
+    }
 }

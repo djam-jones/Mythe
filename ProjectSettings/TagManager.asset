@@ -17,6 +17,7 @@ TagManager:
   - Tube
   - MovingPlatform
   - Turret
+  - SaveLoadData
   layers:
   - Default
   - TransparentFX
@@ -27,8 +28,8 @@ TagManager:
   - 
   - 
   - OverlayLayer
-  - 
-  - 
+  - LayerHuman
+  - LayerAlien
   - 
   - 
   - 

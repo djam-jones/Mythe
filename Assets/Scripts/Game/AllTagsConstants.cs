@@ -21,4 +21,5 @@ public class AllTagsConstants : MonoBehaviour
 	public const string respawnTag		= "Respawn";
     public const string MainCamera      = "MainCamera";
     public const string playerData      = "PlayerData";
+    public const string saveLoadData    = "SaveLoadData";
 }

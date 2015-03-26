@@ -1,5 +1,6 @@
 ﻿//written by Rob Verhoef
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class LevelSelect : MonoBehaviour 
@@ -9,6 +10,8 @@ public class LevelSelect : MonoBehaviour
 	[SerializeField]private GameObject _page2;
 	[SerializeField]private GameObject _lArrow;
 	[SerializeField]private GameObject _rArrow;
+	[SerializeField]private GameObject _menuArrow;
+    [SerializeField]private Text[] _scoreTxt;
 	private int _currentPage = 1;
 	private PlayerData _playerData;
 	
@@ -18,17 +21,24 @@ public class LevelSelect : MonoBehaviour
 		UpdatePage();
 	}
 
+    void OnLevelWasLoaded(int lvl) 
+    {
+        UpdatePage();
+    }
+
 	private void UpdatePage()
 	{
 		for(int i = 0; i < _playerData.unlockedLevels; i++)
 		{
 			_allButtons[i].SetActive(true);
-			Debug.Log("unlocking!");
+            _scoreTxt[i].text = "Highscore: " + _playerData.GetHighscore(i);
 		}
+
 		if(_currentPage == 1)
 		{
 			_page1.SetActive(true);
 			_page2.SetActive(false);
+            _menuArrow.SetActive(true);
 			_lArrow.SetActive(false);
 			_rArrow.SetActive(true);
 		}
@@ -36,6 +46,7 @@ public class LevelSelect : MonoBehaviour
 		{
 			_page1.SetActive(false);
 			_page2.SetActive(true);
+            _menuArrow.SetActive(false);
 			_lArrow.SetActive(true);
 			_rArrow.SetActive(false);
 		}
@@ -53,23 +64,4 @@ public class LevelSelect : MonoBehaviour
 			UpdatePage();
 	}
 
-	public void LoadLevel1 ()
-	{
-		Application.LoadLevel ("Level01");
-	}
-
-	public void LoadLevel2 ()
-	{
-		Application.LoadLevel ("Level02");
-	}
-
-	public void LoadLevel3 ()
-	{
-		Application.LoadLevel ("Level03");
-	}
-
-	public void LoadLevel4 ()
-	{
-		Application.LoadLevel ("Level04");
-	}
 }

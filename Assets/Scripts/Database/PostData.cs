@@ -8,11 +8,11 @@ public class PostData : MonoBehaviour
 
     private string _username;
     private int _highscore;
-    private PlayerData playerData;
+    private PlayerData _playerData;
 
     void Start() 
     {
-        playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
+        _playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
     }
 
     public void Submit() 
@@ -25,7 +25,7 @@ public class PostData : MonoBehaviour
         }
 
         // Get highscore
-        _highscore = playerData.highscore;
+        _highscore = Mathf.RoundToInt(_playerData.highscores[_playerData.currentLvl]);
         Post();
     }
 
