@@ -86,6 +86,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &176658
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 412234}
+  - 114: {fileID: 11434076}
+  m_Layer: 0
+  m_Name: ObjectPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &407746
 Transform:
   m_ObjectHideFlags: 1
@@ -98,6 +114,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 451772}
   m_RootOrder: 1
+--- !u!4 &412234
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5, y: -3.38000011, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 418684}
+  m_RootOrder: 1
 --- !u!4 &418684
 Transform:
   m_ObjectHideFlags: 1
@@ -109,6 +137,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 421276}
+  - {fileID: 412234}
   m_Father: {fileID: 451772}
   m_RootOrder: 0
 --- !u!4 &420254
@@ -142,7 +171,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 169106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 4, z: 0}
+  m_LocalPosition: {x: 5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 418684}
@@ -302,6 +331,21 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &11434076
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3227fd91e0cc4f748bea32fb6f48aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefabs:
+  - {fileID: 178704, guid: c9c25d1b4156344d0b13fd7fef852bcd, type: 2}
+  amountToBuffer: 14000000
+  defaultBufferAmount: 3
 --- !u!114 &11488968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -313,6 +357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c499e008369b647aba1ccf25c32eb8eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletDestructionTime: 10
+  bulletSpeed: 25
+  poolAfterComplete: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

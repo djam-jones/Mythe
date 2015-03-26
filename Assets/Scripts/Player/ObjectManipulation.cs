@@ -11,6 +11,8 @@ public class ObjectManipulation : MonoBehaviour
 	[SerializeField]private float _decrease;
 	[SerializeField]private float _increase;
 	[SerializeField]private float _points;
+	[SerializeField] private AudioSource _audio;
+	[SerializeField] private AudioClip _psyAudio;
 	private bool _recharge;
 	private Transform _dragObject;
     private Vector3 _dragOffset;
@@ -38,7 +40,9 @@ public class ObjectManipulation : MonoBehaviour
                     _offset = _mousePos - _dragObject.position;
                     Debug.Log("dragOffset: " + _dragOffset);
                     _mouseClickPos = _mousePos;
-					
+
+					_audio.clip = _psyAudio;
+					_audio.Play();
 				}
 			}
 		} 
@@ -46,6 +50,7 @@ public class ObjectManipulation : MonoBehaviour
 		{
 			_recharge = true;
 			_dragObject = null;
+			_audio.Stop();
 		}
 		else if (_points <= 0)
 		{
