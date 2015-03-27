@@ -11,7 +11,8 @@ public class MovingPlatform : MonoBehaviour
 	private int _waypointIndex;
 	public Transform[] waypoints;
 	public float platformSpeed = 1.2f;
-	private float _waitTime = 0.2f;
+	[SerializeField] private float _waitTime = 0.2f;
+    private bool _stopped = false;
 
 	void Start()
 	{
@@ -23,24 +24,22 @@ public class MovingPlatform : MonoBehaviour
 
 	void Update()
 	{
-		StartCoroutine(Move());
+        if (_stopped) return;
+
+        Movement();
 	}
 
-	public void StopMoving()
-	{
-		StopCoroutine(Move());
-	}
+    void Movement() 
+    {
+        //Move this Platform to one of the set target.
+        transform.position = Vector2.MoveTowards(transform.position, _target.position, platformSpeed * Time.deltaTime);
 
-	public IEnumerator Move()
-	{
-		//Move this Platform to one of the set target.
-		transform.position = Vector2.MoveTowards(this.transform.position, _target.position, platformSpeed * Time.deltaTime);
-
-		if(waypoints.Length != null)
+		if (waypoints.Length != null)
 		{
 			if(transform.position == _target.position)
 			{
 				_waypointIndex += 1;
+                StartCoroutine(SetNewTarget());
 			}
 			if(_waypointIndex >= waypoints.Length)
 			{
@@ -48,7 +47,19 @@ public class MovingPlatform : MonoBehaviour
 			}
 		}
 
+    }
+
+	IEnumerator SetNewTarget()
+	{
 		yield return new WaitForSeconds(_waitTime);
 		_target = waypoints[_waypointIndex];
 	}
+    
+    public bool stopped 
+    {
+        set 
+        {
+            _stopped = value;
+        }
+    }
 }
