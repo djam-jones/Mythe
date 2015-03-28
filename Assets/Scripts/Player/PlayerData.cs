@@ -8,8 +8,8 @@ public class PlayerData : MonoBehaviour
 {
 
     private float[] _highscores = new float[4];
-    private int _score = 0;
-	private int _unlockedLevels = 1;
+    private float _score = 0;
+	private int _unlockedLevels = 0;
     private int _currentLvl;
     SaveLoadDataSerialized _saveLoadData;
 
@@ -34,21 +34,20 @@ public class PlayerData : MonoBehaviour
         Debug.Log("CheckScore -> Trigger");
 
         if (_score < _highscores[_currentLvl]) {
-            Debug.Log("Score < Highscore");
             _highscores[_currentLvl] = _score;
             Debug.Log("New Highscore: " + _highscores[_currentLvl]);
         }
-        SaveHighscore();
-
-        if (_currentLvl + 1 == _unlockedLevels) {
+        
+        if (_currentLvl == _unlockedLevels) {
             _unlockedLevels++;
         }
+
+        SaveHighscore();
     }
 
     public void SaveHighscore() 
     {
         _highscores[_currentLvl] = _score;
-        Debug.Log("SaveHighscore - " + _score + " - Into -> " + _highscores[_currentLvl]);
         _saveLoadData.Save();
     }
 
@@ -79,7 +78,7 @@ public class PlayerData : MonoBehaviour
         }
     }
 
-    public int score
+    public float score
     {
         get 
         {

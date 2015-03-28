@@ -15,7 +15,7 @@ public class LevelSelect : MonoBehaviour
 	private int _currentPage = 1;
 	private PlayerData _playerData;
 	
-	void Awake ()
+	void Awake()
 	{
 		_playerData = GameObject.FindGameObjectWithTag(AllTagsConstants.playerData).GetComponent<PlayerData>();
 		UpdatePage();
@@ -28,7 +28,7 @@ public class LevelSelect : MonoBehaviour
 
 	private void UpdatePage()
 	{
-		for(int i = 0; i < _playerData.unlockedLevels; i++)
+		for(int i = 0; i <= _playerData.unlockedLevels; i++)
 		{
 			_allButtons[i].SetActive(true);
             _scoreTxt[i].text = "Highscore: " + _playerData.GetHighscore(i);

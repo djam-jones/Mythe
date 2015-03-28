@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System;
 
     // Boy Voesten
 
@@ -21,7 +22,7 @@ public class PlayerScore : MonoBehaviour
     {
         if (counting) 
         {
-            _playerData.score = Mathf.RoundToInt(Time.timeSinceLevelLoad);
+            _playerData.score = (float)Math.Round(Time.timeSinceLevelLoad, 2);
             scoreTxt.text = "Time: " + _playerData.score;
         }
     }
