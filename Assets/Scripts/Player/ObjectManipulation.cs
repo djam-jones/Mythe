@@ -79,7 +79,7 @@ public class ObjectManipulation : MonoBehaviour
             //dragObjRB.AddForce(offset);// _dragOffset);
             //_dragObject.transform.position = Vector3.Lerp(_dragObject.transform.position, _mousePos, Time.smoothDeltaTime * 10);
             
-			//_points -= Time.deltaTime * _decrease;
+			_points -= Time.deltaTime * _decrease;
 			_pointBar.size = _points / 100;
 		}
 		else if(_recharge && _points < 100)

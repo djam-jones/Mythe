@@ -63,7 +63,7 @@ public class TrapButton : MonoBehaviour
         } 
         else if (trap.tag == AllTagsConstants.turretTag && _turretScript != null)
         {
-            _turretScript.DisableGun(_waitTime);
+            StartCoroutine(_turretScript.DisableGun(_waitTime));
             Debug.Log("Turret");
         }
     }
