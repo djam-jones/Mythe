@@ -30,8 +30,8 @@ TagManager:
   - OverlayLayer
   - LayerHuman
   - LayerAlien
-  - 
-  - 
+  - BulletLayer
+  - TurretLayer
   - 
   - 
   - 

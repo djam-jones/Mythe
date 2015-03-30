@@ -33,18 +33,21 @@ public class Turret : MonoBehaviour
 	
 	void Update()
 	{
-		StartCoroutine("RotateGun");
+		StartCoroutine(RotateGun());
 		SpotObject();
 
 		if(_humanSpotted)
 		{
-			StopCoroutine("RotateGun");
+			LookAtTarget();
+			StopCoroutine(RotateGun());
 			Shoot();
 		}
 	}
 	
 	void SpotObject()
 	{
+		Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("TurretLayer"), LayerMask.NameToLayer("BulletLayer"), true);
+
 		float dist = 999999.99f;
 		GameObject closestObject = null;
 		foreach(GameObject objectInList in _lineOfSight)
@@ -74,7 +77,7 @@ public class Turret : MonoBehaviour
 		_rotatable = true;
 	}
 	
-	IEnumerator RotateGun()
+	public IEnumerator RotateGun()
 	{
 		if(_rotatable)
 		{
@@ -105,6 +108,14 @@ public class Turret : MonoBehaviour
 //		{
 //			_activeBullet = 0;
 //		}
+	}
+
+	void LookAtTarget()
+	{
+		Vector3 dir = _target.transform.position - transform.position;
+		float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+		float objAngle = -90f;
+		transform.rotation = Quaternion.AngleAxis(angle - objAngle, Vector3.forward);
 	}
 
 	
