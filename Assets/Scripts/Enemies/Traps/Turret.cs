@@ -21,9 +21,8 @@ public class Turret : MonoBehaviour
 //	private int _activeBullet = 0;
 	public GameObject bullet;
 	public GameObject gunBarrel;
-	private float _bulletDestructionTime = 5f;
 	private float _bulletCoolDown;
-	private float _defaultCoolDownTime = 2f;
+	private float _defaultCoolDownTime = 1.5f;
 
 	void Awake()
 	{
@@ -61,6 +60,10 @@ public class Turret : MonoBehaviour
 		if(_lineOfSight.Contains(_target) && closestObject == _target)
 		{
 			_humanSpotted = true;
+		}
+		else if(!_lineOfSight.Contains(_target) && closestObject != _target)
+		{
+			_humanSpotted = false;
 		}
 	}
 	
@@ -119,7 +122,7 @@ public class Turret : MonoBehaviour
 		if(other.transform.tag != null)
 		{
 			//Remove GameObject from the sight List
-			_lineOfSight.Remove(other.gameObject);
+			_lineOfSight.RemoveAt(0);
 		}
 	}
 }

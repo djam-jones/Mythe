@@ -30,3 +30,8 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.meta
+
+Assets/Materials/Players/Thumbs.db.meta
+
+Assets/Materials/Sprites/Thumbs.db.meta

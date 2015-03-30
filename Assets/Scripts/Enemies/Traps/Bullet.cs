@@ -30,4 +30,12 @@ public class Bullet : MonoBehaviour
 	{
 		transform.Translate(_shootDir * _travelSpeed * Time.deltaTime);
 	}
+
+	void OnCollisionEnter2D(Collision2D col)
+	{
+		if(col.transform != null)
+		{
+			Destroy(this.gameObject);
+		}
+	}
 }
