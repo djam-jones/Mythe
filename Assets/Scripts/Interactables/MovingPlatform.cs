@@ -12,7 +12,7 @@ public class MovingPlatform : MonoBehaviour
 	public Transform[] waypoints;
 	public float platformSpeed = 1.2f;
 	[SerializeField] private float _waitTime = 0.2f;
-    private bool _stopped = false;
+    [SerializeField] private bool _stopped = false;
 
 	void Start()
 	{
@@ -57,6 +57,10 @@ public class MovingPlatform : MonoBehaviour
     
     public bool stopped 
     {
+        get 
+        {
+            return _stopped;
+        }
         set 
         {
             _stopped = value;

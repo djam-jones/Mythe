@@ -58,7 +58,7 @@ public class TrapButton : MonoBehaviour
         } 
         else if (trap.tag == AllTagsConstants.platformTag && _movingPlatformScript != null)
         {
-            _movingPlatformScript.stopped = true;
+            _movingPlatformScript.stopped = !_movingPlatformScript.stopped;
             Debug.Log("Platform");
         } 
         else if (trap.tag == AllTagsConstants.turretTag && _turretScript != null)

@@ -124,7 +124,8 @@ public class PlayerMovement : MonoBehaviour
         if (hit.transform.tag == AllTagsConstants.groundTag 
         || hit.transform.tag == AllTagsConstants.objectTag 
         || hit.transform.tag == AllTagsConstants.alienTag 
-        || hit.transform.tag == AllTagsConstants.platformTag) 
+        || hit.transform.tag == AllTagsConstants.platformTag
+        || hit.transform.tag == AllTagsConstants.trapDoorTag) 
         {
             if (_isJumping) 
             {
