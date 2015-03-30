@@ -22,7 +22,7 @@ public class Turret : MonoBehaviour
 	public GameObject bullet;
 	public GameObject gunBarrel;
 	private float _bulletCoolDown;
-	private float _defaultCoolDownTime = 1.5f;
+	private float _defaultCoolDownTime = 0.2f;
 
 	void Awake()
 	{

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Bullet : MonoBehaviour 
 {
-	private float _travelSpeed = 25f;
+	private float _travelSpeed = 30f;
 	private float _destructionCounter = 3.5f;
 	private Vector2 _shootDir;
 
