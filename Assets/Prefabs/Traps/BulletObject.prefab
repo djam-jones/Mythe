@@ -12,6 +12,7 @@ GameObject:
   - 23: {fileID: 2324532}
   - 61: {fileID: 6105334}
   - 114: {fileID: 11480246}
+  - 50: {fileID: 5071528}
   m_Layer: 0
   m_Name: BulletObject
   m_TagString: Trap
@@ -62,6 +63,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178704}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!50 &5071528
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178704}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!61 &6105334
 BoxCollider2D:
   m_ObjectHideFlags: 1

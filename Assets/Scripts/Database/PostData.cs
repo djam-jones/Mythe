@@ -18,24 +18,29 @@ public class PostData : MonoBehaviour
     public void Submit() 
     {
         // Check if username is entered.
-        if (_username == null || _username.Length < 1) 
+        if (_username == null || _username.Length <= 2) 
         {
-            Debug.Log("Invalid Username");
+            Debug.Log("Invalid Username, must be longer than 2 chars");
             return;
         }
 
-        // Get highscore
-        _highscore = Mathf.RoundToInt(_playerData.highscores[_playerData.currentLvl]);
         Post();
     }
 
     public void Post() 
     {
-        string url = "http://localhost/bap/inputoutput.php";
+        string url = "http://projectprologue.com/mythe/inputoutput.php";
         WWWForm form = new WWWForm();
 
         form.AddField("username", _username);
-        form.AddField("_highscore", _highscore);
+
+        // Put all lvls' highscores into the url. 
+        // PHP will grab it and automatically put it into an array.
+        for (var i = 0; i < _playerData.highscores.Length; i++) 
+        {
+            _highscore = Mathf.RoundToInt(_playerData.highscores[i]);
+            form.AddField("highscore[]", _highscore);
+        }
 
         WWW www = new WWW(url, form);
         StartCoroutine(WaitForRequest(www));
@@ -56,9 +61,6 @@ public class PostData : MonoBehaviour
             // Connection could not be made
             Debug.Log("WWW Error: " + www.error);
         }
-
-        // Continue to the next level, even if you fail to connect to database
-        Application.LoadLevel(Application.loadedLevel +1);
     }
 
     // For the UI to set
