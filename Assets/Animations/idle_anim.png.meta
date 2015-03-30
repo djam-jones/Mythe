@@ -1,0 +1,1661 @@
+fileFormatVersion: 2
+guid: f12ba744451a5af47b6a9dfc80c7f0fd
+timeCreated: 1427707175
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: fuck_0
+    21300002: fuck_1
+    21300004: fuck_2
+    21300006: fuck_3
+    21300008: fuck_4
+    21300010: fuck_5
+    21300012: fuck_6
+    21300014: fuck_7
+    21300016: fuck_8
+    21300018: fuck_9
+    21300020: fuck_10
+    21300022: fuck_11
+    21300024: fuck_12
+    21300026: fuck_13
+    21300028: fuck_14
+    21300030: fuck_15
+    21300032: fuck_16
+    21300034: fuck_17
+    21300036: fuck_18
+    21300038: fuck_19
+    21300040: fuck_20
+    21300042: fuck_21
+    21300044: fuck_22
+    21300046: fuck_23
+    21300048: fuck_24
+    21300050: fuck_25
+    21300052: fuck_26
+    21300054: fuck_27
+    21300056: fuck_28
+    21300058: fuck_29
+    21300060: fuck_30
+    21300062: fuck_31
+    21300064: fuck_32
+    21300066: fuck_33
+    21300068: fuck_34
+    21300070: fuck_35
+    21300072: fuck_36
+    21300074: fuck_37
+    21300076: fuck_38
+    21300078: fuck_39
+    21300080: fuck_40
+    21300082: fuck_41
+    21300084: fuck_42
+    21300086: fuck_43
+    21300088: fuck_44
+    21300090: fuck_45
+    21300092: fuck_46
+    21300094: fuck_47
+    21300096: fuck_48
+    21300098: fuck_49
+    21300100: fuck_50
+    21300102: fuck_51
+    21300104: fuck_52
+    21300106: fuck_53
+    21300108: fuck_54
+    21300110: fuck_55
+    21300112: fuck_56
+    21300114: fuck_57
+    21300116: fuck_58
+    21300118: fuck_59
+    21300120: fuck_60
+    21300122: fuck_61
+    21300124: fuck_62
+    21300126: fuck_63
+    21300128: fuck_64
+    21300130: fuck_65
+    21300132: fuck_66
+    21300134: fuck_67
+    21300136: fuck_68
+    21300138: fuck_69
+    21300140: fuck_70
+    21300142: fuck_71
+    21300144: fuck_72
+    21300146: fuck_73
+    21300148: fuck_74
+    21300150: fuck_75
+    21300152: fuck_76
+    21300154: fuck_77
+    21300156: fuck_78
+    21300158: fuck_79
+    21300160: fuck_80
+    21300162: fuck_81
+    21300164: fuck_82
+    21300166: fuck_83
+    21300168: fuck_84
+    21300170: fuck_85
+    21300172: fuck_86
+    21300174: fuck_87
+    21300176: fuck_88
+    21300178: fuck_89
+    21300180: fuck_90
+    21300182: fuck_91
+    21300184: fuck_92
+    21300186: fuck_93
+    21300188: fuck_94
+    21300190: fuck_95
+    21300192: fuck_96
+    21300194: fuck_97
+    21300196: fuck_98
+    21300198: fuck_99
+    21300200: fuck_100
+    21300202: fuck_101
+    21300204: fuck_102
+    21300206: fuck_103
+    21300208: fuck_104
+    21300210: fuck_105
+    21300212: fuck_106
+    21300214: fuck_107
+    21300216: fuck_108
+    21300218: fuck_109
+    21300220: fuck_110
+    21300222: fuck_111
+    21300224: fuck_112
+    21300226: fuck_113
+    21300228: fuck_114
+    21300230: fuck_115
+    21300232: fuck_116
+    21300234: fuck_117
+    21300236: fuck_118
+    21300238: fuck_119
+    21300240: fuck_120
+    21300242: fuck_121
+    21300244: fuck_122
+    21300246: fuck_123
+    21300248: fuck_124
+    21300250: fuck_125
+    21300252: fuck_126
+    21300254: fuck_127
+    21300256: fuck_128
+    21300258: fuck_129
+    21300260: fuck_130
+    21300262: fuck_131
+    21300264: fuck_132
+    21300266: fuck_133
+    21300268: fuck_134
+    21300270: fuck_135
+    21300272: fuck_136
+    21300274: fuck_137
+    21300276: fuck_138
+    21300278: fuck_139
+    21300280: fuck_140
+    21300282: fuck_141
+    21300284: fuck_142
+    21300286: fuck_143
+    21300288: fuck_144
+    21300290: fuck_145
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: fuck_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_6
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_10
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1932
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_14
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_17
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_18
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_19
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_22
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_23
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1816
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_27
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_28
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_31
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_34
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_35
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1700
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_38
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_39
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_40
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_41
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_42
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_43
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_45
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_46
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_47
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1584
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_51
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_53
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_54
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_55
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_57
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_58
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_59
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1468
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_62
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_63
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_65
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_66
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_67
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_68
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_69
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_70
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_71
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1352
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_73
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_75
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_76
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_77
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_78
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_79
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_80
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_81
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_82
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_83
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1236
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_87
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_88
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_89
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_90
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_91
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_92
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_93
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_94
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_95
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1120
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_97
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_98
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_99
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_100
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_101
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_102
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_103
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_104
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_105
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_106
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_107
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1004
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_109
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_110
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_111
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_112
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_113
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_114
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_115
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_116
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_117
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_118
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_119
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 888
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_121
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_122
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_123
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_124
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_125
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_126
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_127
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_128
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_129
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_130
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_131
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 772
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_132
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_133
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_134
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_135
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_136
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_137
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_138
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_139
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_140
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_141
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_142
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_143
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 656
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_144
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fuck_145
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 540
+        width: 160
+        height: 116
+      alignment: 7
+      pivot: {x: .5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

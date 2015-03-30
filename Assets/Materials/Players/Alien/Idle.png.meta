@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a4fadacf04cc748479c038001dce75eb
-timeCreated: 1427152973
+timeCreated: 1427706529
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -182,15 +182,15 @@ TextureImporter:
     21300350: Alien_idle_175
     21300352: Alien_idle_176
     21300354: Alien_idle_177
-    21300356: Alien_idle_178
-    21300358: Alien_idle_179
-    21300360: Alien_idle_180
-    21300362: Alien_idle_181
-    21300364: Alien_idle_182
-    21300366: Alien_idle_183
-    21300368: Alien_idle_184
-    21300370: Alien_idle_185
-    21300372: Alien_idle_186
+    21300356: Alien_idle_177
+    21300358: Alien_idle_178
+    21300360: Alien_idle_179
+    21300362: Alien_idle_180
+    21300364: Alien_idle_181
+    21300366: Alien_idle_182
+    21300368: Alien_idle_183
+    21300370: Alien_idle_184
+    21300372: Alien_idle_185
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -214,7 +214,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 4096
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -2006,7 +2006,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_178
+    - name: Alien_idle_177
       rect:
         serializedVersion: 2
         x: 1113
@@ -2016,7 +2016,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_179
+    - name: Alien_idle_178
       rect:
         serializedVersion: 2
         x: 1198
@@ -2026,7 +2026,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_180
+    - name: Alien_idle_179
       rect:
         serializedVersion: 2
         x: 1295
@@ -2036,7 +2036,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_181
+    - name: Alien_idle_180
       rect:
         serializedVersion: 2
         x: 1405
@@ -2046,7 +2046,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_182
+    - name: Alien_idle_181
       rect:
         serializedVersion: 2
         x: 1525
@@ -2056,7 +2056,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_183
+    - name: Alien_idle_182
       rect:
         serializedVersion: 2
         x: 1661
@@ -2066,7 +2066,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_184
+    - name: Alien_idle_183
       rect:
         serializedVersion: 2
         x: 1800
@@ -2076,7 +2076,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_185
+    - name: Alien_idle_184
       rect:
         serializedVersion: 2
         x: 0
@@ -2086,7 +2086,7 @@ TextureImporter:
       alignment: 7
       pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Alien_idle_186
+    - name: Alien_idle_185
       rect:
         serializedVersion: 2
         x: 146
