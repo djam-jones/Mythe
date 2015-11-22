@@ -30,3 +30,12 @@ Audio:
 Media Managers:   
 -Tommy Krijt   
 -Barrie Schotsman    
+
+# Work that we're proud of
+
+Boy Voesten
+
+Djamali Jones
+
+Rob Verhoef
+- [Object Manipulation](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Player/ObjectManipulation.cs)
