@@ -13,24 +13,24 @@ It's being developed for Android in the Unity3D engine using C#
 The Team
 
 Developers:   
-*Boy Voesten*  
-*Rob Verhoef*  
-*Djamali Jones*     
+*- Boy Voesten*  
+*- Rob Verhoef*  
+*- Djamali Jones*     
   
 Artists:  
-*Niels de Ruijter*  
-*Roy van der Plas*  
-*Bram Nijland*  
-*Kwon Yuri*  
-*Miranda Schrama*  
+*- Niels de Ruijter*  
+*- Roy van der Plas*  
+*- Bram Nijland*  
+*- Kwon Yuri*  
+*- Miranda Schrama*  
   
 Audio:  
-*Rick van der Breggen*  
-*Stanley Steenken*  
+*- Rick van der Breggen*  
+*- Stanley Steenken*  
   
 Media Managers:   
-*Tommy Krijt*  
-*Barrie Schotsman*  
+*- Tommy Krijt*  
+*- Barrie Schotsman*  
   
 # Work that we're proud of
 
