@@ -34,7 +34,10 @@ Media Managers:
 # Work that we're proud of
 
 Boy Voesten
-
+- [Player Tools](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Player/PlayerTools.cs)
+- [Player Movement](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Player/PlayerMovement.cs)
+- [Post Data to Database](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Database/PostData.cs)  
+  
 Djamali Jones
 
 Rob Verhoef
