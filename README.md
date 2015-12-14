@@ -39,6 +39,8 @@ Boy Voesten
 - [Post Data to Database](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Database/PostData.cs)  
   
 Djamali Jones
+- [Turret](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Enemies/Traps/Turret.cs)
+- [Loading Screen](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/UI/LoadingScreen.cs)
 
 Rob Verhoef
 - [Object Manipulation](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Player/ObjectManipulation.cs)
