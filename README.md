@@ -32,7 +32,7 @@ Media Managers:
 *- Tommy Krijt*  
 *- Barrie Schotsman*  
   
-# Work that we're proud of
+# Work that we are proud of
 
 Boy Voesten
 - [Player Tools](https://github.com/djam-jones/Mythe/blob/master/Assets/Scripts/Player/PlayerTools.cs)
